@@ -148,6 +148,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -472,7 +485,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bathroom_Assets_0: 6601101101887557737
+      Bathroom_Assets_1: 3176957640855545120
+      Bathroom_Assets_10: 4941396670801874337
+      Bathroom_Assets_11: 105181852601453372
+      Bathroom_Assets_12: 4508298614440048236
+      Bathroom_Assets_13: 1941307008976558021
+      Bathroom_Assets_2: 5868294490208493684
+      Bathroom_Assets_3: 850799066330185739
+      Bathroom_Assets_4: -2117942692283310224
+      Bathroom_Assets_5: 5469866579866305042
+      Bathroom_Assets_6: 3887175329317623350
+      Bathroom_Assets_7: -3124206171847075939
+      Bathroom_Assets_8: -2197124657688980293
+      Bathroom_Assets_9: -2121450137165442763
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

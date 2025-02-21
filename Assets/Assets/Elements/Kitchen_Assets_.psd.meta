@@ -154,6 +154,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -522,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Kitchen_Assets__0: -3642796842943259188
+      Kitchen_Assets__1: -1535397417847161312
+      Kitchen_Assets__10: -6589796460119084859
+      Kitchen_Assets__11: -2960700716583109506
+      Kitchen_Assets__12: -4830399387602537215
+      Kitchen_Assets__13: 8304261923788919666
+      Kitchen_Assets__14: -7712509145107392027
+      Kitchen_Assets__15: -302370760052471353
+      Kitchen_Assets__2: 4889677791341911846
+      Kitchen_Assets__3: -3221158496208136898
+      Kitchen_Assets__4: 2073278055112174740
+      Kitchen_Assets__5: -2101957357843158006
+      Kitchen_Assets__6: 4898725566772837382
+      Kitchen_Assets__7: 5304454499913706766
+      Kitchen_Assets__8: -8291962876114273106
+      Kitchen_Assets__9: -5228758288356708560
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

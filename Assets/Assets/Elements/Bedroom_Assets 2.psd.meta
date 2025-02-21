@@ -190,6 +190,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -822,7 +835,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bedroom_Assets 2_0: 1922049469765489177
+      Bedroom_Assets 2_1: -2989990310716748018
+      Bedroom_Assets 2_10: 5800589097828231913
+      Bedroom_Assets 2_11: 863305377118402880
+      Bedroom_Assets 2_12: -7573559942481092979
+      Bedroom_Assets 2_13: -4263867998812236890
+      Bedroom_Assets 2_14: -2249562025203951974
+      Bedroom_Assets 2_15: 4321582240178426824
+      Bedroom_Assets 2_16: 927863631434642637
+      Bedroom_Assets 2_17: 5050859284181557490
+      Bedroom_Assets 2_18: 2008619255664367177
+      Bedroom_Assets 2_19: 3332146249261587812
+      Bedroom_Assets 2_2: -6344468732733295397
+      Bedroom_Assets 2_20: 6689080803889755936
+      Bedroom_Assets 2_21: -8916081239250002116
+      Bedroom_Assets 2_22: -7093396156519201095
+      Bedroom_Assets 2_23: -8215603388297214871
+      Bedroom_Assets 2_24: 3188537996879761890
+      Bedroom_Assets 2_25: -8880987382847718237
+      Bedroom_Assets 2_26: -5496117122861097317
+      Bedroom_Assets 2_27: -3306525955083161846
+      Bedroom_Assets 2_3: 8378704993606894352
+      Bedroom_Assets 2_4: 7176162036613109089
+      Bedroom_Assets 2_5: -776820887533825535
+      Bedroom_Assets 2_6: 2917869616578550112
+      Bedroom_Assets 2_7: -6492570708548415213
+      Bedroom_Assets 2_8: 4736479401860579603
+      Bedroom_Assets 2_9: -2194845400503106236
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
