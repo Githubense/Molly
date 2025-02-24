@@ -1,23 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
- 
+
 public class LevelMove_Ref : MonoBehaviour
 {
     public int sceneBuildIndex;
- 
-    // Level move zoned enter, if collider is a player
-    // Move game to another scene
-    private void OnTriggerEnter2D(Collider2D other) {
-        print("Trigger Entered");
-        
-        // Could use other.GetComponent<Player>() to see if the game object has a Player component
-        // Tags work too. Maybe some players have different script components?
-        if(other.tag == "Player") {
-            // Player entered, so move level
-            print("Switching Scene to " + sceneBuildIndex);
-            SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
+    private bool canTeleport = false;
+
+    private void Start()
+    {
+        // Attende un secondo prima di riabilitare il teletrasporto
+        Invoke("EnableTeleport", 1f);
+    }
+
+    private void EnableTeleport()
+    {
+        canTeleport = true;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && canTeleport)
+        {
+            // Salva la posizione prima di cambiare scena
+            Vector3 playerPosition = other.transform.position;
+            PlayerPositionManager.Instance.SavePosition(SceneManager.GetActiveScene().buildIndex, playerPosition);
+            
+            // Cambia scena
+            SceneManager.LoadScene(sceneBuildIndex);
         }
     }
 }

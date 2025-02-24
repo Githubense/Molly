@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,6 +13,19 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        // Controlla se esiste una posizione salvata
+        Vector3 savedPosition = PlayerPositionManager.Instance.GetSavedPosition(SceneManager.GetActiveScene().buildIndex);
+
+        if (savedPosition != Vector3.zero)
+        {
+            transform.position = savedPosition;
+            Debug.Log("Caricata posizione: " + savedPosition + " nella scena " + SceneManager.GetActiveScene().buildIndex);
+        }
+        else
+        {
+            Debug.Log("Nessuna posizione salvata per la scena " + SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     private void FixedUpdate()
@@ -23,14 +37,12 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.linearVelocity = moveInput * moveSpeed;
 
-        // Controllo se il personaggio sta camminando
         if (moveInput != Vector2.zero)
         {
             animator.SetBool("isWalking", true);
             animator.SetFloat("InputX", moveInput.x);
             animator.SetFloat("InputY", moveInput.y);
 
-            // Salva la direzione dell'ultimo movimento per l'animazione di idle
             animator.SetFloat("LastInputX", moveInput.x);
             animator.SetFloat("LastInputY", moveInput.y);
         }
