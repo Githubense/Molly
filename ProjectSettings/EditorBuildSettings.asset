@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/Bathroom Test.unity
     guid: 9fdc3335530f5484f914a0c3fe38a109
   - enabled: 1
-    path: Assets/Kitchen .unity
-    guid: 616d4f31efc824a2c8570fcf491b4d1e
+    path: Assets/Kitchen.unity
+    guid: 8f4632908f55a45ad84490e7526dbfff
+  - enabled: 1
+    path: Assets/Entry.unity
+    guid: 76e019443e6984b72b51adfe6ea1de64
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 407010733b648472198ef4f79b431646, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
