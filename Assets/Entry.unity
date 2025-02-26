@@ -812,8 +812,8 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
-  orthographic: 1
+  field of view: 73
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -1079,7 +1079,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -3607643352480215830, guid: 7a8ed262e7d05461d843089a2eb91c49, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1424,7 +1424,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5535765389086017021, guid: a79e88c67a5da49539356efe8f363252, type: 3}
       propertyPath: m_LocalScale.x
-      value: -1.635333
+      value: -1.6878271
       objectReference: {fileID: 0}
     - target: {fileID: 5535765389086017021, guid: a79e88c67a5da49539356efe8f363252, type: 3}
       propertyPath: m_LocalScale.y
@@ -1432,7 +1432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5535765389086017021, guid: a79e88c67a5da49539356efe8f363252, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.75
+      value: -10.7237
       objectReference: {fileID: 0}
     - target: {fileID: 5535765389086017021, guid: a79e88c67a5da49539356efe8f363252, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1604,7 +1604,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -3353701362721241257, guid: 7a8ed262e7d05461d843089a2eb91c49, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
