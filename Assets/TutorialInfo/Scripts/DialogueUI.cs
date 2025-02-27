@@ -6,25 +6,49 @@ using TMPro;
 public class DialogueUi : MonoBehaviour
 {
 
+    [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TMP_Text textLabel;
     [SerializeField] private DialogueObject testDialogue;
+
+    private ResponseHandler responseHandler;
     private TypeEffect typeEffect;
 
     private void Start()
     {
         typeEffect = GetComponent<TypeEffect>();
+        responseHandler = GetComponent<ResponseHandler>();
+        CloseDialogueBox();
         ShowDialogue(testDialogue);
     }
     public void ShowDialogue(DialogueObject dialogueObject)
     {
+        dialogueBox.SetActive(true);
         StartCoroutine(StepThroughDialogue(dialogueObject));
     }
     private IEnumerator StepThroughDialogue(DialogueObject dialogueObject) 
     {
-        foreach (string dialogue in dialogueObject.Dialogue)
+        for (int i = 0; i < dialogueObject.Dialogue.Length; i++)
         {
+            string dialogue = dialogueObject.Dialogue[i];
             yield return typeEffect.Run(dialogue, textLabel);
+
+            if(i == dialogueObject.Dialogue.Length - 1 && dialogueObject.Responses != null && dialogueObject.HasResponses) break;
+
             yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
         }
+
+        if(dialogueObject.HasResponses) 
+        {
+            responseHandler.ShowResponses(dialogueObject.Responses);
+        }
+        else 
+        {
+            CloseDialogueBox();
+        }
     }
-}
+        private void CloseDialogueBox()
+        {
+            dialogueBox.SetActive(false);
+            textLabel.text = string.Empty;
+        }
+    }
