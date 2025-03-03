@@ -1,10 +1,7 @@
 
 
-public interface IInteractable {
+public interface IInteractable 
+{
+    void Interact(PlayerMovement player);
 
-void Interact();
-
-bool CanInteract();
-
-
-} 
+}

@@ -4,7 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private DialogueUi dialogueUI;
     [SerializeField] private float moveSpeed = 5f;
+    public DialogueUi DialogueUi => dialogueUI;
+    public IInteractable Interactable { get; set; }
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Animator animator;
@@ -29,9 +32,17 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        Move();
+        if (dialogueUI.isOpen) return;
+
+         Move();
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Interactable?.Interact(player:this);
+            
+        }
     }
 
     private void Move()

@@ -13,7 +13,7 @@ public class ResponseHandler : MonoBehaviour
     private List<GameObject> tempResponseButton = new List<GameObject>();
     private void Start()
     {
-        dialogueUI =GetComponent<DialogueUi>();
+        dialogueUI = GetComponent<DialogueUi>();
     }
     public void ShowResponses(Response[] responses)
     {

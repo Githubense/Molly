@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using TMPro;
@@ -8,7 +9,10 @@ public class DialogueUi : MonoBehaviour
 
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TMP_Text textLabel;
+
     [SerializeField] private DialogueObject testDialogue;
+
+    public bool isOpen { get; private set; }
 
     private ResponseHandler responseHandler;
     private TypeEffect typeEffect;
@@ -18,7 +22,6 @@ public class DialogueUi : MonoBehaviour
         typeEffect = GetComponent<TypeEffect>();
         responseHandler = GetComponent<ResponseHandler>();
         CloseDialogueBox();
-        ShowDialogue(testDialogue);
     }
     public void ShowDialogue(DialogueObject dialogueObject)
     {
@@ -48,6 +51,7 @@ public class DialogueUi : MonoBehaviour
     }
         private void CloseDialogueBox()
         {
+            isOpen = false;
             dialogueBox.SetActive(false);
             textLabel.text = string.Empty;
         }
