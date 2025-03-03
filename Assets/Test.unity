@@ -1723,7 +1723,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 1
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -3276,7 +3276,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -3301,9 +3301,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1499784935}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eca9329c71b45f7b531ec8a13e600e, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ab24e495c07c4adf987e7ce5b14cb50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueObject: {fileID: 11400000, guid: a31cacf9bcd5e412bb6a3d36dd9c18ad, type: 2}
 --- !u!1 &1505683743
 GameObject:
   m_ObjectHideFlags: 0
@@ -3644,8 +3645,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 128}
-  m_SizeDelta: {x: 1400, y: 250}
+  m_AnchoredPosition: {x: 0, y: 150}
+  m_SizeDelta: {x: 1000, y: 174}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1583840447
 GameObject:
@@ -5004,6 +5005,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5942588384032570144, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
+      propertyPath: dialogueUI
+      value: 
+      objectReference: {fileID: 581916102}
     - target: {fileID: 6339097609383273325, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.70320034
