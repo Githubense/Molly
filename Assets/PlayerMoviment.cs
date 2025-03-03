@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Animator animator;
-    private Collider2D interactableObject;
 
     private void Start()
     {
@@ -54,7 +53,6 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isWalking", true);
             animator.SetFloat("InputX", moveInput.x);
             animator.SetFloat("InputY", moveInput.y);
-
             animator.SetFloat("LastInputX", moveInput.x);
             animator.SetFloat("LastInputY", moveInput.y);
         }
@@ -67,30 +65,5 @@ public class PlayerMovement : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Interactable"))
-        {
-            interactableObject = other;
-            Debug.Log("Premi E per interagire con " + other.name);
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other == interactableObject)
-        {
-            interactableObject = null;
-        }
-    }
-
-    public void OnInteract(InputAction.CallbackContext context)
-    {
-        if (context.performed && interactableObject != null)
-        {
-            interactableObject.GetComponent<InteractableObject>()?.Interact();
-        }
     }
 }
