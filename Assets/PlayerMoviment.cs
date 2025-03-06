@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private DialogueUi dialogueUI;
     [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private FixedJoystick joystick;
     public DialogueUi DialogueUi => dialogueUI;
     public IInteractable Interactable { get; set; }
     private Rigidbody2D rb;
@@ -17,9 +18,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
-        // Controlla se esiste una posizione salvata
         Vector3 savedPosition = PlayerPositionManager.Instance.GetSavedPosition(SceneManager.GetActiveScene().buildIndex);
-
         if (savedPosition != Vector3.zero)
         {
             transform.position = savedPosition;
@@ -34,18 +33,27 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         if (dialogueUI.isOpen) return;
-
-         Move();
-
+        Move();
+        
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Interactable?.Interact(player:this);
-            
+            Interactable?.Interact(player: this);
         }
     }
 
     private void Move()
     {
+        Vector2 joystickInput = new Vector2(joystick.Horizontal, joystick.Vertical);
+        
+        if (joystickInput.sqrMagnitude > 0.01f) // Controllo per evitare movimenti involontari
+        {
+            moveInput = joystickInput;
+        }
+        else
+        {
+            moveInput = Vector2.zero;
+        }
+        
         rb.linearVelocity = moveInput * moveSpeed;
 
         if (moveInput != Vector2.zero)
