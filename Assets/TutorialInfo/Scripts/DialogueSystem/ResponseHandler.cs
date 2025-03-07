@@ -10,18 +10,20 @@ public class ResponseHandler : MonoBehaviour
     [SerializeField] private RectTransform responseContainer;
 
     private DialogueUi dialogueUI;
+    private DialogueActivator dialogueActivator;  // Reference to the DialogueActivator
 
-    private List<Button> tempResponseButton = new List<Button>(); // Cambiato per memorizzare solo i Button
-    private bool hasResponded = false; // Variabile di stato per verificare se è stata già selezionata una risposta
+    private List<Button> tempResponseButton = new List<Button>(); // Store only the buttons
+    private bool hasResponded = false; // Track if a response has been selected
 
     private void Start()
     {
         dialogueUI = GetComponent<DialogueUi>();
+        dialogueActivator = GetComponent<DialogueActivator>(); // Get the DialogueActivator reference
     }
 
     public void ShowResponses(Response[] responses)
     {
-        if (hasResponded) return; // Se una risposta è già stata selezionata, non fare nulla
+        if (hasResponded) return; // If a response has already been selected, do nothing
 
         float responseBoxHeight = 0;
 
@@ -32,42 +34,48 @@ public class ResponseHandler : MonoBehaviour
             responseButton.GetComponent<TMP_Text>().text = response.ResponseText;
             Button buttonComponent = responseButton.GetComponent<Button>();
 
-            // Aggiungi l'ascoltatore dell'evento di clic solo se non è stata data una risposta
+            // Add click listener only if no response has been given yet
             buttonComponent.onClick.AddListener(() => OnPickedResponse(response));
 
-            // Aggiungi il pulsante alla lista
+            // Add the button to the list
             tempResponseButton.Add(buttonComponent);
 
-            // Calcola l'altezza del box di risposta
+            // Calculate the height of the response box
             responseBoxHeight += responseButtonTemplate.sizeDelta.y;
         }
 
-        // Imposta l'altezza dinamica del box
+        // Set the dynamic height for the response box
         responseBox.sizeDelta = new Vector2(responseBox.sizeDelta.x, responseBoxHeight);
 
-        // Rendi visibile la risposta
+        // Make the response box visible
         responseBox.gameObject.SetActive(true);
     }
 
     private void OnPickedResponse(Response response)
     {
-        if (hasResponded) return; // Se la risposta è già stata scelta, non fare nulla
+        if (hasResponded) return; // If a response has already been chosen, do nothing
 
-        hasResponded = true; // Imposta che una risposta è stata scelta
+        hasResponded = true; // Mark that a response has been chosen
 
-        // Nascondi la risposta dopo la selezione
+        // Hide the response box after the selection
         responseBox.gameObject.SetActive(false);
 
-        // Fai in modo che i pulsanti non reagiscano più
+        // Disable further interaction by removing all listeners from the buttons
         foreach (Button button in tempResponseButton)
         {
-            button.onClick.RemoveAllListeners(); // Rimuovi tutti gli ascoltatori di eventi
+            button.onClick.RemoveAllListeners(); // Remove all event listeners
         }
 
-        // Resetta la lista dei pulsanti (se non la stai più usando)
+        // Clear the list of buttons (if not used anymore)
         tempResponseButton.Clear();
 
-        // Mostra il dialogo associato alla risposta
+        // Hide the visual cue and disable interaction permanently
+        if (dialogueActivator != null)
+        {
+            dialogueActivator.DisableInteraction();  // Disable interaction and hide visual cue
+        }
+
+        // Show the dialogue associated with the response
         dialogueUI.ShowDialogue(response.DialogueObject);
     }
 }
