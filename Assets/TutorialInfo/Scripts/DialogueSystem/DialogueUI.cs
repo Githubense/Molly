@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;  // Add this for UnityEvent
 
 public class DialogueUi : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class DialogueUi : MonoBehaviour
     private TypeEffect typeEffect;
 
     private bool hasResponded = false;  // Traccia se la risposta è stata fornita
+
+    // UnityEvent to notify when dialogue is closed
+    public UnityEvent OnDialogueClosed;
 
     private void Start()
     {
@@ -76,6 +80,9 @@ public class DialogueUi : MonoBehaviour
         isOpen = false;
         dialogueBox.SetActive(false);
         textLabel.text = string.Empty;
+
+        // Trigger the event when dialogue is closed
+        OnDialogueClosed?.Invoke();
     }
 
     public void ResetResponseStatus() 

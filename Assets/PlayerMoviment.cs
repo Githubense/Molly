@@ -7,8 +7,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private DialogueUi dialogueUI;
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private FixedJoystick joystick;
+
     public DialogueUi DialogueUi => dialogueUI;
     public IInteractable Interactable { get; set; }
+
+    // Make the HasInteracted property readable and writable
+    public bool HasInteracted { get; set; }  // Now accessible and can be set
+
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Animator animator;
@@ -18,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
+        // Load saved position (if any)
         Vector3 savedPosition = PlayerPositionManager.Instance.GetSavedPosition(SceneManager.GetActiveScene().buildIndex);
         if (savedPosition != Vector3.zero)
         {
@@ -32,20 +38,22 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (dialogueUI.isOpen) return;
-        Move();
-        
-        if (Input.GetKeyDown(KeyCode.E))
+        if (dialogueUI.isOpen) return; // Prevent movement during dialogue
+
+        Move(); // Handle movement
+
+        if (Input.GetKeyDown(KeyCode.E) && !HasInteracted) // Only interact if not already interacted
         {
             Interactable?.Interact(player: this);
+            HasInteracted = true; // Mark as interacted
         }
     }
 
     private void Move()
     {
         Vector2 joystickInput = new Vector2(joystick.Horizontal, joystick.Vertical);
-        
-        if (joystickInput.sqrMagnitude > 0.01f) // Controllo per evitare movimenti involontari
+
+        if (joystickInput.sqrMagnitude > 0.01f) // Ignore minor joystick movements
         {
             moveInput = joystickInput;
         }
@@ -53,9 +61,10 @@ public class PlayerMovement : MonoBehaviour
         {
             moveInput = Vector2.zero;
         }
-        
+
         rb.linearVelocity = moveInput * moveSpeed;
 
+        // Update animator for walking direction
         if (moveInput != Vector2.zero)
         {
             animator.SetBool("isWalking", true);
@@ -70,8 +79,15 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    // Method for movement input (for Unity Input System)
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
+    }
+
+    // Reset interaction state after a short time or when player leaves the area
+    public void ResetInteraction()
+    {
+        HasInteracted = false;
     }
 }

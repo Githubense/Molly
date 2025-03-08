@@ -14,7 +14,7 @@ public class DialogueActivator : MonoBehaviour, IInteractable
             player.Interactable = this;
 
             // Enable the visual cue when player is near
-            if (visualCue != null)
+            if (visualCue != null && !player.HasInteracted) // Only show if not interacted already
                 visualCue.SetActive(true);
         }
     }
@@ -27,25 +27,40 @@ public class DialogueActivator : MonoBehaviour, IInteractable
             if (player.Interactable == this)
             {
                 player.Interactable = null;
-
-                // Disable the visual cue when player leaves the trigger zone
-                if (visualCue != null)
-                    visualCue.SetActive(false);
             }
         }
     }
 
     public void Interact(PlayerMovement player)
     {
+        // Show dialogue when the player interacts
         player.DialogueUi.ShowDialogue(dialogueObject);
+
+        // Mark as interacted
+        player.HasInteracted = true;
+
+        // Subscribe to the event for when the dialogue closes
+        player.DialogueUi.OnDialogueClosed.AddListener(HideVisualCue);
     }
 
-    // Disable interaction and hide the visual cue
+    private void HideVisualCue()
+    {
+        // Hide the visual cue after the dialogue is closed
+        if (visualCue != null)
+        {
+            visualCue.SetActive(false);
+        }
+
+        // Optionally, unsubscribe if you don't need further updates after this
+        // player.DialogueUi.OnDialogueClosed.RemoveListener(HideVisualCue);
+    }
+
+    // Disable interaction and hide the visual cue permanently
     public void DisableInteraction()
     {
         canInteract = false;
 
-        // Hide the visual cue permanently
+        // Hide the visual cue permanently if needed
         if (visualCue != null)
         {
             visualCue.SetActive(false);
