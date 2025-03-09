@@ -1,14 +1,12 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using TMPro;
-using UnityEngine.Events;  // Add this for UnityEvent
+using UnityEngine.Events;
 
 public class DialogueUi : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TMP_Text textLabel;
-
     [SerializeField] private DialogueObject testDialogue;
 
     public bool isOpen { get; private set; }
@@ -16,7 +14,7 @@ public class DialogueUi : MonoBehaviour
     private ResponseHandler responseHandler;
     private TypeEffect typeEffect;
 
-    private bool hasResponded = false;  // Traccia se la risposta è stata fornita
+    private bool hasResponded = false;  // Track if a response has been given
 
     // UnityEvent to notify when dialogue is closed
     public UnityEvent OnDialogueClosed;
@@ -30,47 +28,43 @@ public class DialogueUi : MonoBehaviour
 
     public void ShowDialogue(DialogueObject dialogueObject)
     {
-        if (hasResponded) return;  // Se la risposta è già stata fornita, non fare nulla
+        if (hasResponded) return;  // If a response was already provided, do nothing
 
         isOpen = true;
         dialogueBox.SetActive(true);
         StartCoroutine(StepThroughDialogue(dialogueObject));
     }
 
-    private IEnumerator StepThroughDialogue(DialogueObject dialogueObject) 
+    private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
     {
         for (int i = 0; i < dialogueObject.Dialogue.Length; i++)
         {
             string dialogue = dialogueObject.Dialogue[i];
             yield return typeEffect.Run(dialogue, textLabel);
 
-            // Se siamo all'ultimo messaggio e ci sono risposte, fermiamo il ciclo
-            if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.Responses != null && dialogueObject.HasResponses) 
+            if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.Responses != null && dialogueObject.HasResponses)
             {
-                break; // Uscita per mostrare le risposte
+                break; // Exit to show responses
             }
 
-            // Aspetta che l'utente prema "Space" per andare avanti
+            // Wait for the user to press "Space" to continue
             yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
         }
 
-        if (dialogueObject.HasResponses) 
+        if (dialogueObject.HasResponses)
         {
-            // Mostra le risposte
             responseHandler.ShowResponses(dialogueObject.Responses);
 
-            // Aspetta che l'utente prema "Space" dopo le risposte per chiudere la finestra del dialogo
+            // Wait for the user to press "Space" after the responses to close the dialogue box
             yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
 
-            // Dopo che l'utente ha premuto "Space", chiudi la finestra di dialogo
             CloseDialogueBox();
 
-            // Imposta che l'utente ha risposto
+            // Mark that the user has responded
             hasResponded = true;
         }
-        else 
+        else
         {
-            // Se non ci sono risposte, chiudi subito la finestra del dialogo
             CloseDialogueBox();
         }
     }
@@ -81,13 +75,13 @@ public class DialogueUi : MonoBehaviour
         dialogueBox.SetActive(false);
         textLabel.text = string.Empty;
 
-        // Trigger the event when dialogue is closed
+        // Trigger the event when the dialogue is closed
         OnDialogueClosed?.Invoke();
     }
 
-    public void ResetResponseStatus() 
+    public void ResetResponseStatus()
     {
-        // Resetta la variabile hasResponded se vuoi permettere nuove interazioni
+        // Reset the 'hasResponded' flag to allow interaction with this dialogue again
         hasResponded = false;
     }
 }

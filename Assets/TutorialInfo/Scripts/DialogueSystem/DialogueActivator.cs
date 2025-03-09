@@ -3,9 +3,9 @@ using UnityEngine;
 public class DialogueActivator : MonoBehaviour, IInteractable
 {
     [SerializeField] private DialogueObject dialogueObject;
-    [SerializeField] private GameObject visualCue;  // Reference to the visual cue object
+    [SerializeField] private GameObject visualCue;
 
-    private bool canInteract = true;  // Flag to track whether interaction is allowed
+    private bool canInteract = true;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,8 +13,8 @@ public class DialogueActivator : MonoBehaviour, IInteractable
         {
             player.Interactable = this;
 
-            // Enable the visual cue when player is near
-            if (visualCue != null && !player.HasInteracted) // Only show if not interacted already
+            // Enable visual cue
+            if (visualCue != null)
                 visualCue.SetActive(true);
         }
     }
@@ -23,47 +23,24 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     {
         if (other.CompareTag("Player") && other.TryGetComponent(out PlayerMovement player))
         {
-            // Only disable interaction if the player was interacting with this specific DialogueActivator
-            if (player.Interactable == this)
-            {
-                player.Interactable = null;
-            }
+            player.Interactable = null;
+            // Hide visual cue when player leaves
+            if (visualCue != null)
+                visualCue.SetActive(false);
         }
     }
 
     public void Interact(PlayerMovement player)
     {
-        // Show dialogue when the player interacts
+        // Show dialogue UI
         player.DialogueUi.ShowDialogue(dialogueObject);
-
-        // Mark as interacted
-        player.HasInteracted = true;
-
-        // Subscribe to the event for when the dialogue closes
-        player.DialogueUi.OnDialogueClosed.AddListener(HideVisualCue);
     }
 
-    private void HideVisualCue()
-    {
-        // Hide the visual cue after the dialogue is closed
-        if (visualCue != null)
-        {
-            visualCue.SetActive(false);
-        }
-
-        // Optionally, unsubscribe if you don't need further updates after this
-        // player.DialogueUi.OnDialogueClosed.RemoveListener(HideVisualCue);
-    }
-
-    // Disable interaction and hide the visual cue permanently
+    // Disable interaction permanently (e.g., for one-time interactions)
     public void DisableInteraction()
     {
         canInteract = false;
-
-        // Hide the visual cue permanently if needed
         if (visualCue != null)
-        {
             visualCue.SetActive(false);
-        }
     }
 }

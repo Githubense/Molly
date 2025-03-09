@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,8 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public DialogueUi DialogueUi => dialogueUI;
     public IInteractable Interactable { get; set; }
 
-    // Make the HasInteracted property readable and writable
-    public bool HasInteracted { get; set; }  // Now accessible and can be set
+    private bool hasInteracted = false;  // Track whether interaction was completed
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
@@ -22,30 +20,23 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
-        // Load saved position (if any)
-        Vector3 savedPosition = PlayerPositionManager.Instance.GetSavedPosition(SceneManager.GetActiveScene().buildIndex);
-        if (savedPosition != Vector3.zero)
-        {
-            transform.position = savedPosition;
-            Debug.Log("Caricata posizione: " + savedPosition + " nella scena " + SceneManager.GetActiveScene().buildIndex);
-        }
-        else
-        {
-            Debug.Log("Nessuna posizione salvata per la scena " + SceneManager.GetActiveScene().buildIndex);
-        }
     }
 
     private void Update()
     {
-        if (dialogueUI.isOpen) return; // Prevent movement during dialogue
+        if (dialogueUI.isOpen) return;  // Prevent movement during dialogue
 
         Move(); // Handle movement
 
-        if (Input.GetKeyDown(KeyCode.E) && !HasInteracted) // Only interact if not already interacted
+        if (Input.GetKeyDown(KeyCode.E) && !hasInteracted)
         {
-            Interactable?.Interact(player: this);
-            HasInteracted = true; // Mark as interacted
+            Interactable?.Interact(this);  // Trigger interaction with the object
+
+            // If interaction triggers dialogue, wait for the response
+            if (Interactable is DialogueActivator dialogueActivator)
+            {
+                hasInteracted = true; // Prevent further interaction until reset
+            }
         }
     }
 
@@ -53,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 joystickInput = new Vector2(joystick.Horizontal, joystick.Vertical);
 
-        if (joystickInput.sqrMagnitude > 0.01f) // Ignore minor joystick movements
+        if (joystickInput.sqrMagnitude > 0.01f)
         {
             moveInput = joystickInput;
         }
@@ -79,15 +70,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // Method for movement input (for Unity Input System)
-    public void OnMove(InputAction.CallbackContext context)
-    {
-        moveInput = context.ReadValue<Vector2>();
-    }
-
-    // Reset interaction state after a short time or when player leaves the area
+    // Method for resetting interaction when leaving area
     public void ResetInteraction()
     {
-        HasInteracted = false;
+        hasInteracted = false;  // Reset interaction flag
+        Interactable = null;    // Clear the interactable reference
     }
 }
