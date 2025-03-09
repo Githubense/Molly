@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   dialogue:
-  - This is the first dialogue
-  - This is the second dialogue
+  - "Too soft, too enveloping... I don\u2019t want to get up."
   responses:
   - responseText: Yes
     dialogueObject: {fileID: 11400000, guid: 0cd424d1f876a4671aa795196ae0bf72, type: 2}
