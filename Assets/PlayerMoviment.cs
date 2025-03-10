@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private FixedJoystick joystick;
 
     public DialogueUi DialogueUi => dialogueUI;
-    public IInteractable Interactable { get; set; }
+    public IInteractable Interactable { get; set; }  // Assigned by DialogueActivator
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
@@ -22,17 +21,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        // If a dialogue is open, we skip movement (so the player won't move while reading).
-        // But we allow continuing/closing the dialogue via SPACE in DialogueUI itself.
-        if (!dialogueUI.isOpen)
-        {
-            Move();
+        // If dialogue is open, disable movement so the player doesn't walk around
+        if (dialogueUI.isOpen) return;
 
-            // Press E to interact, no longer blocked by any hasInteracted flag
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                Interactable?.Interact(this);
-            }
+        Move();
+
+        // Press E to interact with the currently assigned Interactable
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Interactable?.Interact(this);
         }
     }
 
@@ -46,7 +43,6 @@ public class PlayerMovement : MonoBehaviour
         else
             moveInput = Vector2.zero;
 
-        // Set movement
         rb.linearVelocity = moveInput * moveSpeed;
 
         // Update animator for walking direction
@@ -56,7 +52,6 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("InputX", moveInput.x);
             animator.SetFloat("InputY", moveInput.y);
 
-            // Store last input direction so idle animation “faces” that way
             animator.SetFloat("LastInputX", moveInput.x);
             animator.SetFloat("LastInputY", moveInput.y);
         }
