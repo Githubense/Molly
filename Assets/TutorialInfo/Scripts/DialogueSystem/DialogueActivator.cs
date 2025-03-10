@@ -5,6 +5,7 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     [SerializeField] private DialogueObject dialogueObject;
     [SerializeField] private GameObject visualCue;
 
+    // Always let player interact
     private bool canInteract = true;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -12,10 +13,7 @@ public class DialogueActivator : MonoBehaviour, IInteractable
         if (other.CompareTag("Player") && other.TryGetComponent(out PlayerMovement player) && canInteract)
         {
             player.Interactable = this;
-
-            // Enable visual cue
-            if (visualCue != null)
-                visualCue.SetActive(true);
+            if (visualCue != null) visualCue.SetActive(true);
         }
     }
 
@@ -24,23 +22,21 @@ public class DialogueActivator : MonoBehaviour, IInteractable
         if (other.CompareTag("Player") && other.TryGetComponent(out PlayerMovement player))
         {
             player.Interactable = null;
-            // Hide visual cue when player leaves
-            if (visualCue != null)
-                visualCue.SetActive(false);
+            if (visualCue != null) visualCue.SetActive(false);
         }
     }
 
     public void Interact(PlayerMovement player)
     {
-        // Show dialogue UI
+        // Show dialogue UI; no one-time blocking
         player.DialogueUi.ShowDialogue(dialogueObject);
     }
 
-    // Disable interaction permanently (e.g., for one-time interactions)
-    public void DisableInteraction()
-    {
-        canInteract = false;
-        if (visualCue != null)
-            visualCue.SetActive(false);
-    }
+    // Remove or comment out permanent disabling
+    // public void DisableInteraction()
+    // {
+    //     canInteract = false;
+    //     if (visualCue != null)
+    //         visualCue.SetActive(false);
+    // }
 }

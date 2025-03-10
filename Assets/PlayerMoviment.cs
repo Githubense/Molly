@@ -10,8 +10,6 @@ public class PlayerMovement : MonoBehaviour
     public DialogueUi DialogueUi => dialogueUI;
     public IInteractable Interactable { get; set; }
 
-    private bool hasInteracted = false;  // Track whether interaction was completed
-
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Animator animator;
@@ -24,35 +22,31 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (dialogueUI.isOpen) return;  // Prevent movement during dialogue
-
-        Move(); // Handle movement
-
-        if (Input.GetKeyDown(KeyCode.E) && !hasInteracted)
+        // If a dialogue is open, we skip movement (so the player won't move while reading).
+        // But we allow continuing/closing the dialogue via SPACE in DialogueUI itself.
+        if (!dialogueUI.isOpen)
         {
-            Interactable?.Interact(this);  // Trigger interaction with the object
+            Move();
 
-            // If interaction triggers dialogue, wait for the response
-            if (Interactable is DialogueActivator dialogueActivator)
+            // Press E to interact, no longer blocked by any hasInteracted flag
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                hasInteracted = true; // Prevent further interaction until reset
+                Interactable?.Interact(this);
             }
         }
     }
 
     private void Move()
     {
+        // Gather input from the virtual joystick
         Vector2 joystickInput = new Vector2(joystick.Horizontal, joystick.Vertical);
 
         if (joystickInput.sqrMagnitude > 0.01f)
-        {
             moveInput = joystickInput;
-        }
         else
-        {
             moveInput = Vector2.zero;
-        }
 
+        // Set movement
         rb.linearVelocity = moveInput * moveSpeed;
 
         // Update animator for walking direction
@@ -61,6 +55,8 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isWalking", true);
             animator.SetFloat("InputX", moveInput.x);
             animator.SetFloat("InputY", moveInput.y);
+
+            // Store last input direction so idle animation “faces” that way
             animator.SetFloat("LastInputX", moveInput.x);
             animator.SetFloat("LastInputY", moveInput.y);
         }
@@ -68,12 +64,5 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isWalking", false);
         }
-    }
-
-    // Method for resetting interaction when leaving area
-    public void ResetInteraction()
-    {
-        hasInteracted = false;  // Reset interaction flag
-        Interactable = null;    // Clear the interactable reference
     }
 }

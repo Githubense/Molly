@@ -5,10 +5,12 @@ using UnityEngine;
 public class TypeEffect : MonoBehaviour
 {
     [SerializeField] private float typeSpeed = 50f;
+
     public Coroutine Run(string textToType, TMP_Text textLabel) 
     {
-       return StartCoroutine(TypeText(textToType, textLabel));
+        return StartCoroutine(TypeText(textToType, textLabel));
     }
+
     private IEnumerator TypeText(string textToType, TMP_Text textLabel)
     {
         textLabel.text = string.Empty;
