@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cutting board _0: 3883531810187982563
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Canva _0: 1568539601642399696
+      Canva _1: 463459825972798356
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

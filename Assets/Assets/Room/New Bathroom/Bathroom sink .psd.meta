@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bathroom sink _0: -4891693342371673414
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
