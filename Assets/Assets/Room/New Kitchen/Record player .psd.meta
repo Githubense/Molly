@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Record player _0: 6664639403896029744
+      Record player _1: -7393306921554209688
+      Record player _2: 1093552211591501178
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
