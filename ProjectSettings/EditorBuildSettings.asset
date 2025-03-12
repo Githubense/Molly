@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/NEW BEDROOM.unity
-    guid: de4d733a474f649dab0245ddf2fee690
+    path: Assets/Scenes/Bedroom.unity
+    guid: 4a20b42fb7f9047b19e5573a04881e93
   - enabled: 1
     path: Assets/Scenes/New Bathroom.unity
     guid: 1234bd2e1dda64d54bdbbcc329ffc632
