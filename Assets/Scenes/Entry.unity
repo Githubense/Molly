@@ -480,6 +480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelMove2
       objectReference: {fileID: 0}
+    - target: {fileID: 7191760634713714482, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7508993495517665950, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
       propertyPath: sceneBuildIndex
       value: 3
@@ -2661,9 +2665,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd983b42755bf428cb831ddb15516a02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responseBox: {fileID: 1687094630}
-  responseButtonTemplate: {fileID: 26350002}
-  responseContainer: {fileID: 742494334}
 --- !u!114 &2089344081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2691,7 +2692,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 1237949314}
   textLabel: {fileID: 1400629288}
-  testDialogue: {fileID: 11400000, guid: a31cacf9bcd5e412bb6a3d36dd9c18ad, type: 2}
+  OnDialogueClosed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2089344083
 MonoBehaviour:
   m_ObjectHideFlags: 0
