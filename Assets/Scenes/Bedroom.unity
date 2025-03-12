@@ -2655,11 +2655,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.62, y: 0.44}
   m_EdgeRadius: 0
---- !u!1 &762201845 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2719034695261068026, guid: 5868b07c7fddf46cea22da6ad4f6aa32, type: 3}
-  m_PrefabInstance: {fileID: 5287299896211062975}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &830283349
 GameObject:
   m_ObjectHideFlags: 0
@@ -4015,21 +4010,6 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 8609209338958471704, guid: 5868b07c7fddf46cea22da6ad4f6aa32, type: 3}
   m_PrefabInstance: {fileID: 5287299896211062975}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1437032409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 762201845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d907d42cabcb04491bcc8a274ee1521f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 431613942}
-  smoothSpeed: 0.125
-  offset: {x: 0, y: 0, z: -7}
 --- !u!1 &1452928313
 GameObject:
   m_ObjectHideFlags: 0
@@ -6693,6 +6673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: molly_0
       objectReference: {fileID: 0}
+    - target: {fileID: 7621167970145518680, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6709,6 +6693,14 @@ PrefabInstance:
     - target: {fileID: 2719034695261068026, guid: 5868b07c7fddf46cea22da6ad4f6aa32, type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 7365826875401065516, guid: 5868b07c7fddf46cea22da6ad4f6aa32, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 431613942}
+    - target: {fileID: 7365826875401065516, guid: 5868b07c7fddf46cea22da6ad4f6aa32, type: 3}
+      propertyPath: offset.z
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 9064996906897701526, guid: 5868b07c7fddf46cea22da6ad4f6aa32, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6753,10 +6745,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2719034695261068026, guid: 5868b07c7fddf46cea22da6ad4f6aa32, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1437032409}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5868b07c7fddf46cea22da6ad4f6aa32, type: 3}
 --- !u!1001 &7027670272834237396
 PrefabInstance:
