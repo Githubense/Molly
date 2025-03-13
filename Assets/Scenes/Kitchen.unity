@@ -472,7 +472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7508993495517665950, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
       propertyPath: sceneBuildIndex
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5235,6 +5235,83 @@ Transform:
   - {fileID: 1221615321}
   m_Father: {fileID: 1429492490}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1881293629
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4355047990075898398, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355047990075898398, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355047990075898398, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.066281825
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355047990075898398, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355047990075898398, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355047990075898398, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355047990075898398, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355047990075898398, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355047990075898398, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355047990075898398, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4413119077494584001, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_Size.x
+      value: 2.9558218
+      objectReference: {fileID: 0}
+    - target: {fileID: 4413119077494584001, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2163148
+      objectReference: {fileID: 0}
+    - target: {fileID: 4413119077494584001, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.9383
+      objectReference: {fileID: 0}
+    - target: {fileID: 4413119077494584001, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.1081574
+      objectReference: {fileID: 0}
+    - target: {fileID: 7191760634713714482, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: m_Name
+      value: LevelMove2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508993495517665950, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
+      propertyPath: sceneBuildIndex
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: daf68e890e29e4f58b4da6892f8af82f, type: 3}
 --- !u!1 &1892857598
 GameObject:
   m_ObjectHideFlags: 0
@@ -5619,5 +5696,6 @@ SceneRoots:
   - {fileID: 1429492490}
   - {fileID: 1670744674}
   - {fileID: 1722485004}
+  - {fileID: 1881293629}
   - {fileID: 1206044611}
   - {fileID: 53425328}

@@ -6,16 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 700e35e70bb474ae4b35816e533e80ad
+  - enabled: 1
     path: Assets/Scenes/Bedroom.unity
     guid: 4a20b42fb7f9047b19e5573a04881e93
   - enabled: 1
-    path: Assets/Scenes/New Bathroom.unity
+    path: Assets/Scenes/Bathroom.unity
     guid: 1234bd2e1dda64d54bdbbcc329ffc632
   - enabled: 1
-    path: Assets/Scenes/New Kitchen.unity
+    path: Assets/Scenes/Kitchen.unity
     guid: 9b5dbc5f6ee9146df83c66e686f605ab
   - enabled: 1
-    path: Assets/Scenes/New Entry.unity
+    path: Assets/Scenes/Entry.unity
     guid: 3e116c5fe4a4f4382ab657dd49642293
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: ad34e48a3c2bf4dd3b7981f4c6c0d1b0, type: 2}
