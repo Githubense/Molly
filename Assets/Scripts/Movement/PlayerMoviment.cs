@@ -25,6 +25,12 @@ public class PlayerMovement : MonoBehaviour
         if (dialogueUI.isOpen) return;
 
         Move();
+
+        // Check for E key press to interact
+        if (Keyboard.current.eKey.wasPressedThisFrame)
+        {
+            Interactable?.Interact(this);
+        }
     }
 
     private void Move()
