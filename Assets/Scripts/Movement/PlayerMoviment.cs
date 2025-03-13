@@ -1,10 +1,10 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private DialogueUi dialogueUI;
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private FixedJoystick joystick;
 
     public DialogueUi DialogueUi => dialogueUI;
     public IInteractable Interactable { get; set; }  // Assigned by DialogueActivator
@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Animator animator;
-    
 
     private void Start()
     {
@@ -26,24 +25,10 @@ public class PlayerMovement : MonoBehaviour
         if (dialogueUI.isOpen) return;
 
         Move();
-
-        // Press E to interact with the currently assigned Interactable
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Interactable?.Interact(this);
-        }
     }
 
     private void Move()
     {
-        // Gather input from the virtual joystick
-        Vector2 joystickInput = new Vector2(joystick.Horizontal, joystick.Vertical);
-
-        if (joystickInput.sqrMagnitude > 0.01f)
-            moveInput = joystickInput;
-        else
-            moveInput = Vector2.zero;
-
         rb.linearVelocity = moveInput * moveSpeed;
 
         // Update animator for walking direction
@@ -52,13 +37,26 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isWalking", true);
             animator.SetFloat("InputX", moveInput.x);
             animator.SetFloat("InputY", moveInput.y);
-
+            
             animator.SetFloat("LastInputX", moveInput.x);
             animator.SetFloat("LastInputY", moveInput.y);
         }
         else
         {
             animator.SetBool("isWalking", false);
+        }
+    }
+
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        moveInput = context.ReadValue<Vector2>();
+    }
+
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Interactable?.Interact(this);
         }
     }
 }
