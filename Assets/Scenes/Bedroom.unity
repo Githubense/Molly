@@ -3373,7 +3373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab24e495c07c4adf987e7ce5b14cb50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueObject: {fileID: 11400000, guid: bf3676d929b314a388d2d0e9a6ae0294, type: 2}
+  dialogueObject: {fileID: 11400000, guid: 926ee8ab3840645bdb332e1ae0e76dd1, type: 2}
   visualCue: {fileID: 438544779}
 --- !u!61 &987939086
 BoxCollider2D:
