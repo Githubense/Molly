@@ -2167,6 +2167,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 335915039914383949, guid: 66a374195d719416c9d2d402f2ac596b, type: 3}
+      propertyPath: _connection
+      value: 
+      objectReference: {fileID: 11400000, guid: d2b69d3dce3d94ef5b580493f91adf81, type: 2}
+    - target: {fileID: 335915039914383949, guid: 66a374195d719416c9d2d402f2ac596b, type: 3}
+      propertyPath: _spawnPoint
+      value: 
+      objectReference: {fileID: 818834953}
+    - target: {fileID: 335915039914383949, guid: 66a374195d719416c9d2d402f2ac596b, type: 3}
       propertyPath: _targetSceneName
       value: Bedroom
       objectReference: {fileID: 0}
@@ -2223,6 +2231,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66a374195d719416c9d2d402f2ac596b, type: 3}
+--- !u!4 &818834953 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9195508897783029286, guid: 66a374195d719416c9d2d402f2ac596b, type: 3}
+  m_PrefabInstance: {fileID: 818834952}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &863189074
 GameObject:
   m_ObjectHideFlags: 0
