@@ -21,7 +21,7 @@ public class DialogueUi : MonoBehaviour
     private void Awake()
     {
         // Set up the input action for the Space key
-        skipDialogueAction = new InputAction(binding: "<Keyboard>/space");
+        skipDialogueAction = new InputAction(binding: "<Keyboard>/space, <Gamepad>/circleButton");
     }
 
     private void OnEnable()
