@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         Move();
 
         // Check for E or Space key press to interact
-        if (Keyboard.current.eKey.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (Keyboard.current.eKey.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame || Gamepad.current.crossButton.wasPressedThisFrame)
         {
             Interactable?.Interact(this);
         }
