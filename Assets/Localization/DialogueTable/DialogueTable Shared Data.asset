@@ -19,6 +19,26 @@ MonoBehaviour:
     m_Key: Bed
     m_Metadata:
       m_Items: []
+  - m_Id: 1399371877834752
+    m_Key: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1402210666668032
+    m_Key: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1402345610010624
+    m_Key: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1402420016963584
+    m_Key: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1409510345269248
+    m_Key: Close
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
