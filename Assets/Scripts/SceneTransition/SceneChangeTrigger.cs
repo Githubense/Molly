@@ -4,39 +4,43 @@ using System.Collections;
 
 public class SceneChangeTrigger : MonoBehaviour
 {
-    [SerializeField] private string sceneToLoad;     // Nome della scena di destinazione
-    [SerializeField] private Vector3 spawnPosition;  // Posizione del Player nella nuova scena
-    [SerializeField] private CanvasFade canvasFade;  // Assegna in Inspector il CanvasFade della vecchia scena
+    public string sceneToLoad;
+    public Vector3 spawnPosition;
+    private static bool isChangingScene = false; // Flag per evitare cambi immediati
 
-    private bool isChangingScene = false;
+    private void Start()
+    {
+        StartCoroutine(EnableSceneChangeAfterDelay());
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!isChangingScene && other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !isChangingScene)
         {
-            isChangingScene = true;
-            StartCoroutine(ChangeSceneRoutine());
+            isChangingScene = true; // Blocca il cambio scena per un po'
+            PlayerPositionManager.Instance.SavePlayerPosition(SceneManager.GetActiveScene().name, other.transform.position);
+            StartCoroutine(ChangeScene());
         }
     }
 
-    private IEnumerator ChangeSceneRoutine()
+    private IEnumerator ChangeScene()
     {
-        // 1) Fade out (vecchia scena)
-        if (canvasFade != null)
-        {
-            yield return StartCoroutine(canvasFade.FadeOutRoutine());
-        }
-
-        // 2) Carico la nuova scena
         yield return SceneManager.LoadSceneAsync(sceneToLoad);
 
-        // 3) Trovo il Player nella nuova scena e lo posiziono
         GameObject player = GameObject.FindWithTag("Player");
         if (player != null)
         {
             player.transform.position = spawnPosition;
         }
 
+        yield return new WaitForSeconds(1f); // Attendi 1 secondo prima di riattivare il cambio scena
+        isChangingScene = false;
+    }
+
+    private IEnumerator EnableSceneChangeAfterDelay()
+    {
+        isChangingScene = true;
+        yield return new WaitForSeconds(1f);
         isChangingScene = false;
     }
 }
