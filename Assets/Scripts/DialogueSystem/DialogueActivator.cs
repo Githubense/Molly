@@ -1,7 +1,10 @@
 using UnityEngine;
+using TMPro;
 
 public class DialogueActivator : MonoBehaviour, IInteractable
 {
+    [SerializeField] private TMP_Text[] allTexts;  // Array of all TMP_Text elements in your Canvas
+    [SerializeField] private TMP_Text textToShow;
     [SerializeField] private DialogueObject dialogueObject;
     [SerializeField] private GameObject visualCue;
 
@@ -11,6 +14,15 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     {
         if (other.CompareTag("Player") && other.TryGetComponent(out PlayerMovement player))
         {
+            foreach (TMP_Text text in allTexts)
+            {
+                text.gameObject.SetActive(false);
+            }
+
+            if (textToShow != null)
+            {
+                textToShow.gameObject.SetActive(true);
+            }
             // Only show the visual cue & assign 'Interactable' if we have not yet interacted
             if (canInteract)
             {
@@ -25,6 +37,10 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     {
         if (other.CompareTag("Player") && other.TryGetComponent(out PlayerMovement player))
         {
+            if (textToShow != null)
+            {
+                textToShow.gameObject.SetActive(false);
+            }
             // Clear the player's Interactable
             if (player.Interactable == this)
                 player.Interactable = null;
