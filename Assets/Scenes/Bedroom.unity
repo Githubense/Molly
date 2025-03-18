@@ -6759,28 +6759,44 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3716074135199746394, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6175611466909464795, guid: a4a09999916b44f29a9c9d07d7ef2f25, type: 3}
+    - target: {fileID: 3716074135199746394, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3989211261346479601, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
       propertyPath: m_Size.x
-      value: 4.52932
+      value: 0.84849244
       objectReference: {fileID: 0}
     - target: {fileID: 3989211261346479601, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
       propertyPath: m_Size.y
-      value: 5.4432225
+      value: 1.110042
       objectReference: {fileID: 0}
     - target: {fileID: 3989211261346479601, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
       propertyPath: m_Offset.x
-      value: -0.074659824
+      value: 0.0011301339
       objectReference: {fileID: 0}
     - target: {fileID: 3989211261346479601, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
       propertyPath: m_Offset.y
-      value: -2.623389
+      value: -0.4567986
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989211261346479601, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.8234526
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989211261346479601, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.0126953
       objectReference: {fileID: 0}
     - target: {fileID: 5942588384032570144, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
       propertyPath: joystick
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942588384032570144, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
+      propertyPath: moveSpeed
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5942588384032570144, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
       propertyPath: dialogueUI
@@ -6811,12 +6827,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6339097609383273325, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2821099
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339097609383273325, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.258837
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339097609383273325, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339097609383273325, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.09
       objectReference: {fileID: 0}
     - target: {fileID: 6339097609383273325, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.07
       objectReference: {fileID: 0}
     - target: {fileID: 6339097609383273325, guid: 9de7c6ae89b714863ba731619aafa3d5, type: 3}
       propertyPath: m_LocalPosition.z
