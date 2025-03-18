@@ -1,17 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
     public string gameSceneName = "Test"; // Nome della scena di gioco
-    public GameObject settingsPanel; // Pannello delle impostazioni
+    public GameObject settingsCanvas; // Canvas delle impostazioni
 
     void Start()
     {
-        if (settingsPanel != null)
+        if (settingsCanvas != null)
         {
-            settingsPanel.SetActive(false); // Nasconde le impostazioni all'avvio
+            settingsCanvas.SetActive(false); // Nasconde il canvas delle impostazioni all'avvio
         }
     }
 
@@ -28,9 +27,9 @@ public class MainMenu : MonoBehaviour
 
     public void ToggleSettings()
     {
-        if (settingsPanel != null)
+        if (settingsCanvas != null)
         {
-            settingsPanel.SetActive(!settingsPanel.activeSelf); // Mostra/nasconde il pannello
+            settingsCanvas.SetActive(!settingsCanvas.activeSelf); // Mostra/nasconde il canvas
         }
     }
 }

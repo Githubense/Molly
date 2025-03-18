@@ -19,6 +19,58 @@ MonoBehaviour:
     m_Key: Bed
     m_Metadata:
       m_Items: []
+  - m_Id: 1399371877834752
+    m_Key: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1402210666668032
+    m_Key: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1402345610010624
+    m_Key: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1402420016963584
+    m_Key: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1409510345269248
+    m_Key: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1771908071677952
+    m_Key: Cat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1773525143642112
+    m_Key: Drug
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774559781969920
+    m_Key: Fridge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774736135675904
+    m_Key: Paint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774976356048896
+    m_Key: Recorder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775080999739392
+    m_Key: Shower
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775455676915712
+    m_Key: Table
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775821172760576
+    m_Key: Toilet
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

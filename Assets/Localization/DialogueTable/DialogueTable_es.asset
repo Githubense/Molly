@@ -16,12 +16,74 @@ MonoBehaviour:
     m_Code: es
   m_SharedData: {fileID: 11400000, guid: 5f513252a17ec4252af117a324618232, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 2847601373527933233
   m_TableData:
   - m_Id: 94198816768
     m_Localized: Demasiado suave, demasiado envolvente... no quiero levantarme.
     m_Metadata:
       m_Items: []
+  - m_Id: 1399371877834752
+    m_Localized: Opciones
+    m_Metadata:
+      m_Items:
+      - rid: 2847601373527933233
+  - m_Id: 1402210666668032
+    m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1402345610010624
+    m_Localized: Iniciar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1402420016963584
+    m_Localized: Cerrar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1409510345269248
+    m_Localized: Cerrar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1771908071677952
+    m_Localized: "Te dej\xE9 sin comida otra vez... lo siento."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1773525143642112
+    m_Localized: "Suplementos de hierro, vitaminas... los tomo, pero \xBFrealmente
+      ayudan?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774559781969920
+    m_Localized: Solo agua. Perfecto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774736135675904
+    m_Localized: "Deber\xEDa pintar. Pero ni siquiera puedo pensar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774976356048896
+    m_Localized: "Ya no escucho m\xFAsica... Era demasiado reconfortante."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775080999739392
+    m_Localized: "El agua caliente a veces me hace sentir m\xE1s ligera."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775455676915712
+    m_Localized: "Demasiados platos para lavar. Tal vez ma\xF1ana."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775821172760576
+    m_Localized: "A veces me pregunto... si mi cuerpo pudiera rechazarlo todo, tal
+      vez me sentir\xEDa mejor."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 2847601373527933233
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 1399371877834752
