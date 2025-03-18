@@ -77,6 +77,125 @@ MonoBehaviour:
       I\u2019d feel better."
     m_Metadata:
       m_Items: []
+  - m_Id: 1837342561132544
+    m_Localized: 'I isolated myself so much in real life, but at least on social
+      media, I can find people like me.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837683100868608
+    m_Localized: " I overslept again\u2026 Sometimes I wonder why I\u2019m always
+      so tired. But at least if I sleep, I don\u2019t have to think."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837783466369024
+    m_Localized: "I didn\u2019t think I could lose myself this much. My parents always
+      taught me to have perfect grades. Given the few job opportunities in my old
+      town, they made so many sacrifices to let me move here to Puepolis for art
+      school\u2026\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837919101771776
+    m_Localized: "I can\u2019t believe I let them down."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843402839678976
+    m_Localized: "Maybe I should wash them\u2026 They\u2019ve been sitting there
+      for a while.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843481147334656
+    m_Localized: " I didn\u2019t think it would make me feel a bit better.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843542325452800
+    m_Localized: "\u201CSweetie, how are you? How\u2019s the midterm going? I hope
+      you\u2019re not stressing too much. I know you\u2019ll do great\u2014you always
+      do! Can\u2019t wait for you to bring back home another high score!\u201D\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843653365456896
+    m_Localized: "How do I tell her? I\u2019ve been failing all my classes. I can\u2019t
+      disappoint them\u2026 They did so much for me."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843762199257088
+    m_Localized: "I can\u2019t allow myself to eat. I don\u2019t deserve it.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843808089137152
+    m_Localized: 'The fridge is nearly empty.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844027530928128
+    m_Localized: "I don\u2019t need anything."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844106849411072
+    m_Localized: ' Molly hesitates but ultimately closes the fridge without doing
+      anything.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844152944812032
+    m_Localized: " Maybe I should pick up the trash\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844194254512128
+    m_Localized: "I guess\u2026 that was productive?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844336437223424
+    m_Localized: " I look disgusting, I\u2019ll never be skinny enough."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844390212395008
+    m_Localized: "\u201CHey Molly! We\u2019re going to a seafood place this weekend.
+      Wanna come? It\u2019s been so long!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844431459180544
+    m_Localized: "I can\u2019t. I don\u2019t want them to see me like this. What
+      will they think when I only order water? I can\u2019t\u2014I can\u2019t\u2014I
+      can\u2019t eat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844499209773056
+    m_Localized: I need to calm down.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844545045127168
+    m_Localized: Take pills?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844641665114112
+    m_Localized: "It\u2019s fine. I just need to stay in control."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844726880788480
+    m_Localized: " I need to call the therapist. I can\u2019t believe I\u2019m feeling
+      this way\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844799261892608
+    m_Localized: Call Therapist.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844851954933760
+    m_Localized: "Molly? I\u2019m so glad you called. Tell me what\u2019s on your
+      mind."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844916064870400
+    m_Localized: "I\u2026 I think I need help."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844993865015296
+    m_Localized: Good girl. Starve.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
