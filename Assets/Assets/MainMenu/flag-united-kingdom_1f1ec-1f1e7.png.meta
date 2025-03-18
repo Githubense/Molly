@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flag-united-kingdom_1f1ec-1f1e7_0: 3612055277250775697
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Italian_Flag_0: -3635147679166116406
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
