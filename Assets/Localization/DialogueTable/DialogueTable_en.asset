@@ -44,6 +44,39 @@ MonoBehaviour:
     m_Localized: Close
     m_Metadata:
       m_Items: []
+  - m_Id: 1771908071677952
+    m_Localized: I left you without food again... I'm sorry.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1773525143642112
+    m_Localized: Iron supplements, vitamins... I take them, but do they really help?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774559781969920
+    m_Localized: Only water. Perfect.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774736135675904
+    m_Localized: I should paint. But I can't even think.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774976356048896
+    m_Localized: "I don\u2019t listen to music anymore... It was too comforting."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775080999739392
+    m_Localized: Hot water sometimes makes me feel lighter.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775455676915712
+    m_Localized: Too many dishes to wash. Maybe tomorrow.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775821172760576
+    m_Localized: "Sometimes I wonder... if my body could reject everything, maybe
+      I\u2019d feel better."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

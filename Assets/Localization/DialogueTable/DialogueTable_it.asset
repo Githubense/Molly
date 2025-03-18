@@ -44,6 +44,39 @@ MonoBehaviour:
     m_Localized: Chiudi
     m_Metadata:
       m_Items: []
+  - m_Id: 1771908071677952
+    m_Localized: Ti ho lasciato senza cibo di nuovo... mi dispiace.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1773525143642112
+    m_Localized: ' Integratori di ferro, vitamine... li prendo, ma aiutano davvero?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774559781969920
+    m_Localized: Solo acqua. Perfetto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774736135675904
+    m_Localized: Dovrei dipingere. Ma non riesco nemmeno a pensare.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774976356048896
+    m_Localized: "Non ascolto pi\xF9 musica... Era troppo confortante."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775080999739392
+    m_Localized: " L'acqua calda a volte mi fa sentire pi\xF9 leggera."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775455676915712
+    m_Localized: Troppi piatti da lavare. Forse domani.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775821172760576
+    m_Localized: A volte mi chiedo... se il mio corpo potesse rifiutare tutto, forse
+      mi sentirei meglio.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

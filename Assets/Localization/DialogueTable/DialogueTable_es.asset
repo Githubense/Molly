@@ -44,6 +44,40 @@ MonoBehaviour:
     m_Localized: Cerrar
     m_Metadata:
       m_Items: []
+  - m_Id: 1771908071677952
+    m_Localized: "Te dej\xE9 sin comida otra vez... lo siento."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1773525143642112
+    m_Localized: "Suplementos de hierro, vitaminas... los tomo, pero \xBFrealmente
+      ayudan?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774559781969920
+    m_Localized: Solo agua. Perfecto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774736135675904
+    m_Localized: "Deber\xEDa pintar. Pero ni siquiera puedo pensar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774976356048896
+    m_Localized: "Ya no escucho m\xFAsica... Era demasiado reconfortante."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775080999739392
+    m_Localized: "El agua caliente a veces me hace sentir m\xE1s ligera."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775455676915712
+    m_Localized: "Demasiados platos para lavar. Tal vez ma\xF1ana."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775821172760576
+    m_Localized: "A veces me pregunto... si mi cuerpo pudiera rechazarlo todo, tal
+      vez me sentir\xEDa mejor."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
