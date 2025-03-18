@@ -77,6 +77,117 @@ MonoBehaviour:
       mi sentirei meglio.
     m_Metadata:
       m_Items: []
+  - m_Id: 1837683100868608
+    m_Localized: "Ho dormito troppo di nuovo\u2026 A volte mi chiedo perch\xE9 sono
+      sempre cos\xEC stanca. Ma almeno, se dormo, non devo pensare."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837342561132544
+    m_Localized: "Mi sono isolata cos\xEC tanto nella vita reale, ma almeno sui social
+      media posso trovare persone come me"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837783466369024
+    m_Localized: "Non pensavo di potermi perdere cos\xEC tanto. I miei genitori mi
+      hanno sempre insegnato ad avere voti perfetti. Nel mio vecchio paese c\u2019erano
+      poche opportunit\xE0 di lavoro, hanno fatto tanti sacrifici per permettermi
+      di trasferirmi qui a Puepolis per studiare arte\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837919101771776
+    m_Localized: Non posso credere di averli delusi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843402839678976
+    m_Localized: "Forse dovrei lavarli\u2026 Sono l\xEC da troppo tempo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843481147334656
+    m_Localized: "Non pensavo che mi avrebbe fatto sentire un po\u2019 meglio."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843542325452800
+    m_Localized: "\u201CTesoro, come stai? Come stanno andando gli esami? Spero che
+      tu non ti stia stressando troppo. So che andrai benissimo, come sempre! Non
+      vedo l\u2019ora di vederti tornare a casa con un altro voto alto!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843653365456896
+    m_Localized: "Come faccio a dirglielo? Sto fallendo tutti gli esami. Non posso
+      deluderli\u2026 Hanno fatto cos\xEC tanto per me."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843762199257088
+    m_Localized: Non posso permettermi di mangiare. Non lo merito.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843808089137152
+    m_Localized: "Il frigorifero \xE8 praticamente vuoto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844027530928128
+    m_Localized: Non mi serve niente.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844152944812032
+    m_Localized: "Forse dovrei raccogliere la spazzatura\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844106849411072
+    m_Localized: Molly esita, ma alla fine chiude il frigorifero senza prendere nulla.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844194254512128
+    m_Localized: "Immagino\u2026 che sia stato produttivo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844336437223424
+    m_Localized: "Faccio schifo, non sar\xF2 mai abbastanza magra."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844390212395008
+    m_Localized: "\u201CEhi Molly! Andiamo al sushi questo weekend. Vuoi venire?
+      \xC8 da troppo che non ci vediamo!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844431459180544
+    m_Localized: "Non posso. Non voglio che mi vedano cos\xEC. Cosa penseranno quando
+      ordiner\xF2 solo dell\u2019acqua? Non posso\u2014non posso\u2014non posso mangiare."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844499209773056
+    m_Localized: Devo calmarmi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844545045127168
+    m_Localized: Prendere le pillole?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844641665114112
+    m_Localized: Tutto ok. Devo solo mantenere il controllo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844726880788480
+    m_Localized: "Devo chiamare la terapeuta. Non posso credere di sentirmi cos\xEC\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844799261892608
+    m_Localized: Chiama la terapeuta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844851954933760
+    m_Localized: "\u201CMolly? Sono cos\xEC felice che tu abbia chiamato. Dimmi,
+      cosa hai in mente?\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844916064870400
+    m_Localized: "Io\u2026 penso di aver bisogno di aiuto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844993865015296
+    m_Localized: Brava ragazza. Meglio morir di fame.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
