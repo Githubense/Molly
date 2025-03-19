@@ -172,7 +172,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2095195691671552
-    m_Key: Test
+    m_Key: IntroTextScene1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2104022092734464
+    m_Key: IntroTextScene2
     m_Metadata:
       m_Items: []
   m_Metadata:

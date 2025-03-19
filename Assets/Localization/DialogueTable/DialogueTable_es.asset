@@ -193,6 +193,20 @@ MonoBehaviour:
     m_Localized: "Buena chica. Qu\xE9date vac\xEDa."
     m_Metadata:
       m_Items: []
+  - m_Id: 2095195691671552
+    m_Localized: "Aviso\n\nEste juego contiene temas relacionados con trastornos
+      alimentarios y dificultades de salud mental. Algunas escenas pueden ser angustiantes
+      o desencadenar reacciones en algunos jugadores. Se recomienda discreci\xF3n
+      al jugador."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2104022092734464
+    m_Localized: "Si t\xFA o alguien que conoces est\xE1 luchando contra un trastorno
+      alimentario o problemas de salud mental, por favor busca apoyo de un profesional
+      de confianza o de una organizaci\xF3n especializada en salud mental. No est\xE1s
+      solo, y hay ayuda disponible."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
