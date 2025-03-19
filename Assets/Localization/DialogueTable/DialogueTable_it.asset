@@ -188,6 +188,20 @@ MonoBehaviour:
     m_Localized: Brava ragazza. Meglio morir di fame.
     m_Metadata:
       m_Items: []
+  - m_Id: 2095195691671552
+    m_Localized: "Avviso\n\nQuesto gioco contiene tematiche legate ai disturbi alimentari
+      e alle difficolt\xE0 psicologiche. Alcune scene potrebbero risultare distressanti
+      o scatenare reazioni nei giocatori sensibili. Si consiglia la discrezione del
+      giocatore."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2104022092734464
+    m_Localized: "Se tu o qualcuno che conosci sta lottando con un disturbo alimentare
+      o problemi di salute mentale, ti preghiamo di cercare supporto da un professionista
+      di fiducia o da un'organizzazione specializzata in salute mentale. Non sei
+      solo, e l'aiuto \xE8 disponibile."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
