@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a0c166abbf7404e971c48d06ca4317, type: 3}
   m_Name: paint
   m_EditorClassIdentifier: 
-  dialogue:
-  - I should paint. But I can't even think.
-  responses: []
+  dialogueKeys:
+  - Paint

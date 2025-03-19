@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
 
     public DialogueUi DialogueUi => dialogueUI;
-    public IInteractable Interactable { get; set; }  // Assigned by DialogueActivator
+    public IInteractable Interactable { get; set; }
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
@@ -21,12 +21,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        // If dialogue is open, disable movement so the player doesn't walk around
         if (dialogueUI.isOpen) return;
 
         Move();
 
-        // Check for E or Space key press to interact
         if (Keyboard.current.eKey.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             Interactable?.Interact(this);
@@ -37,15 +35,11 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.linearVelocity = moveInput * moveSpeed;
 
-        // Update animator for walking direction
         if (moveInput != Vector2.zero)
         {
             animator.SetBool("isWalking", true);
             animator.SetFloat("InputX", moveInput.x);
             animator.SetFloat("InputY", moveInput.y);
-            
-            animator.SetFloat("LastInputX", moveInput.x);
-            animator.SetFloat("LastInputY", moveInput.y);
         }
         else
         {

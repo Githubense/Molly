@@ -71,6 +71,106 @@ MonoBehaviour:
     m_Key: Toilet
     m_Metadata:
       m_Items: []
+  - m_Id: 1837342561132544
+    m_Key: Computer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837683100868608
+    m_Key: Molly' s in bed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837783466369024
+    m_Key: Molly's telling her story 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837919101771776
+    m_Key: Molly's telling her story 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843402839678976
+    m_Key: 'Interaction with dirty dishes '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843481147334656
+    m_Key: interaction after finishing washing the dishes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843542325452800
+    m_Key: interaction with house phone when mum calls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843653365456896
+    m_Key: 'Moly''s dialogue after the call with her mum '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843762199257088
+    m_Key: 'Molly''s stomach '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843808089137152
+    m_Key: Fridg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844027530928128
+    m_Key: If "close fridge"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844106849411072
+    m_Key: if "restock fridge"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844152944812032
+    m_Key: Molly goes in the bedroom and it's dirty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844194254512128
+    m_Key: Molly after cleaning the bedroom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844336437223424
+    m_Key: Molly looking in the mirror
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844390212395008
+    m_Key: "Phone message\t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844431459180544
+    m_Key: Molly reaction to the message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844499209773056
+    m_Key: "Molly stressing out\t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844545045127168
+    m_Key: 'Interaction with sink '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844641665114112
+    m_Key: "if molly takes pills\t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844726880788480
+    m_Key: 'if molly doesnt take the pills '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844799261892608
+    m_Key: after molly doesn't take the pills
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844851954933760
+    m_Key: Therapist on the house phone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844916064870400
+    m_Key: Molly's response to therapist
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844993865015296
+    m_Key: If molly doesn't call therapist
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -1,30 +1,18 @@
 using UnityEngine;
-using TMPro;
 
 public class DialogueActivator : MonoBehaviour, IInteractable
 {
-    [SerializeField] private TMP_Text[] allTexts;  // Array of all TMP_Text elements in your Canvas
-    [SerializeField] private TMP_Text textToShow;
     [SerializeField] private DialogueObject dialogueObject;
     [SerializeField] private GameObject visualCue;
+    [SerializeField] private string interactionKey;
 
-    private bool canInteract = true;  // Controls if this object can still be interacted with
+    private bool canInteract = true;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && other.TryGetComponent(out PlayerMovement player))
         {
-            foreach (TMP_Text text in allTexts)
-            {
-                text.gameObject.SetActive(false);
-            }
-
-            if (textToShow != null)
-            {
-                textToShow.gameObject.SetActive(true);
-            }
-            // Only show the visual cue & assign 'Interactable' if we have not yet interacted
-            if (canInteract)
+            if (canInteract && StorylineManager.Instance.CanInteract(interactionKey))
             {
                 player.Interactable = this;
                 if (visualCue != null) 
@@ -37,33 +25,22 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     {
         if (other.CompareTag("Player") && other.TryGetComponent(out PlayerMovement player))
         {
-            if (textToShow != null)
-            {
-                textToShow.gameObject.SetActive(false);
-            }
-            // Clear the player's Interactable
             if (player.Interactable == this)
                 player.Interactable = null;
 
-            // Hide the visual cue
             if (visualCue != null)
                 visualCue.SetActive(false);
         }
     }
 
-    // Called from the player's code when pressing the interact key (e.g. E)
     public void Interact(PlayerMovement player)
     {
-        // If canInteract is already false, do nothing
-        if (!canInteract) return;
+        if (!canInteract || !StorylineManager.Instance.CanInteract(interactionKey)) return;
 
-        // Show the dialogue for the first time
         player.DialogueUi.ShowDialogue(dialogueObject);
-
-        // After the first interaction, set canInteract to false
+        StorylineManager.Instance.SetInteractionState(interactionKey, true);
         canInteract = false;
 
-        // Hide the visual cue (so it doesn't mislead the user)
         if (visualCue != null)
             visualCue.SetActive(false);
     }
