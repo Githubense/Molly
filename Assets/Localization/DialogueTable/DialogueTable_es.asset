@@ -44,6 +44,19 @@ MonoBehaviour:
     m_Localized: Cerrar
     m_Metadata:
       m_Items: []
+  - m_Id: 1782774859030528
+    m_Localized: "Advertencia\n\nQuesto gioco contiene temi legati ai disturbi alimentari
+      e alle difficolt\xE0 legate alla salute mentale. Alcune scene potrebbero risultare
+      angoscianti o scatenare reazioni in alcuni giocatori. Si consiglia la discrezione."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1784340840177664
+    m_Localized: "Si t\xFA o alguien que conoces est\xE1 luchando con un trastorno
+      alimentario o problemas de salud mental, por favor busca apoyo de un profesional
+      de confianza o una organizaci\xF3n especializada en salud mental. No est\xE1s
+      solo, y hay ayuda disponible."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

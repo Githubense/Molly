@@ -44,6 +44,22 @@ MonoBehaviour:
     m_Localized: Close
     m_Metadata:
       m_Items: []
+  - m_Id: 1782774859030528
+    m_Localized: 'Disclaimer
+
+
+      This game contains themes related to eating
+      disorders and mental health struggles. Some scenes may be distressing or triggering
+      for certain players. Viewer discretion is advised.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1784340840177664
+    m_Localized: If you or someone you know is struggling with an eating disorder
+      or mental health issues, please seek support from a trusted professional or
+      an organization specializing in mental health. You are not alone, and help
+      is available.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
