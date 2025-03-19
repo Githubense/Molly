@@ -203,6 +203,10 @@ PrefabInstance:
       propertyPath: requiredInteractionKey
       value: Computer
       objectReference: {fileID: 0}
+    - target: {fileID: 3922921386385575864, guid: 36a5f881b13314625a8699f989327f83, type: 3}
+      propertyPath: requiresInitialInteraction
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1989,7 +1993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueObject: {fileID: 11400000, guid: a31cacf9bcd5e412bb6a3d36dd9c18ad, type: 2}
   visualCue: {fileID: 641553602}
-  interactionKey: 
+  interactionKey: Bed
 --- !u!61 &560512839
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3490,7 +3494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueObject: {fileID: 11400000, guid: 926ee8ab3840645bdb332e1ae0e76dd1, type: 2}
   visualCue: {fileID: 438544779}
-  interactionKey: 
+  interactionKey: Paint
 --- !u!61 &987939086
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6040,7 +6044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueObject: {fileID: 11400000, guid: bf3676d929b314a388d2d0e9a6ae0294, type: 2}
   visualCue: {fileID: 126673283}
-  interactionKey: 
+  interactionKey: Cat
 --- !u!61 &1938273690
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7175,6 +7179,10 @@ PrefabInstance:
     - target: {fileID: 3922921386385575864, guid: 36a5f881b13314625a8699f989327f83, type: 3}
       propertyPath: requiredInteractionKey
       value: Computer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3922921386385575864, guid: 36a5f881b13314625a8699f989327f83, type: 3}
+      propertyPath: requiresInitialInteraction
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
