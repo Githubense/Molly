@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1f20797cd70f94ac2b51c5cbba0ef48f
+guid: d9ce9cbf5ce2649969b2dcf422e0ecb3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3356837773014537050
-    second: Untitled_Artwork (1)_0
+      213: -4362492990521673367
+    second: Interaction_button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,19 +97,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork (1)_0
+      name: Interaction_button_0
       rect:
         serializedVersion: 2
-        x: 55
-        y: 44
-        width: 955
-        height: 927
+        x: 80
+        y: 99
+        width: 222
+        height: 237
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5315255b22e59e20800000000000000
-      internalID: 3356837773014537050
+      spriteID: 969f2d41dbf4573c0800000000000000
+      internalID: -4362492990521673367
       vertices: []
       indices: 
       edges: []
@@ -160,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Untitled_Artwork (1)_0: 3356837773014537050
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
