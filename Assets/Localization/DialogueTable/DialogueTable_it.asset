@@ -202,6 +202,14 @@ MonoBehaviour:
       solo, e l'aiuto \xE8 disponibile."
     m_Metadata:
       m_Items: []
+  - m_Id: 2125520488620032
+    m_Localized: Rifornisci il frigorifero.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2125547718041600
+    m_Localized: Chiudi il frigorifero.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
