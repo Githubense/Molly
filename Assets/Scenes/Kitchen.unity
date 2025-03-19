@@ -183,6 +183,10 @@ PrefabInstance:
       propertyPath: spawnPosition.y
       value: -3
       objectReference: {fileID: 0}
+    - target: {fileID: 3922921386385575864, guid: 36a5f881b13314625a8699f989327f83, type: 3}
+      propertyPath: requiredInteractionKey
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -495,6 +499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueObject: {fileID: 11400000, guid: 382019da4d82947879dc517486173e3e, type: 2}
   visualCue: {fileID: 1352024991}
+  interactionKey: Fridge
 --- !u!61 &286477296
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -889,6 +894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueObject: {fileID: 11400000, guid: c9f52426eb35b421ab93fbda1312e175, type: 2}
   visualCue: {fileID: 2146876624}
+  interactionKey: Recorder
 --- !u!61 &491623433
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5171,6 +5177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueObject: {fileID: 11400000, guid: ed1d75b7b9866483da0780e99536ec8c, type: 2}
   visualCue: {fileID: 1363822941}
+  interactionKey: Dishes
 --- !u!61 &1641009291
 BoxCollider2D:
   m_ObjectHideFlags: 0
