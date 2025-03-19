@@ -112,11 +112,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1844027530928128
-    m_Key: If "close fridge"
+    m_Key: CloseFridgeResult
     m_Metadata:
       m_Items: []
   - m_Id: 1844106849411072
-    m_Key: if "restock fridge"
+    m_Key: RestockResult
     m_Metadata:
       m_Items: []
   - m_Id: 1844152944812032
@@ -177,6 +177,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2104022092734464
     m_Key: IntroTextScene2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2125520488620032
+    m_Key: Restock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2125547718041600
+    m_Key: CloseFridge
     m_Metadata:
       m_Items: []
   m_Metadata:

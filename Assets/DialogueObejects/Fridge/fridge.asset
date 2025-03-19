@@ -14,3 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueKeys:
   - Fridge
+  hasChoices: 1
+  choiceKeys:
+  - Restock
+  - CloseFridge
+  choiceResultKeys:
+  - RestockResult
+  - CloseFridgeResult
