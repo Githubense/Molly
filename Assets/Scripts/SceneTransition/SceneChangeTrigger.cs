@@ -6,10 +6,10 @@ public class SceneChangeTrigger : MonoBehaviour
 {
     [SerializeField] private string sceneToLoad;
     [SerializeField] private Vector3 spawnPosition;
-    [SerializeField] private CanvasFade canvasFade; 
-    [SerializeField] private bool requiresInitialInteraction = false; // Add this line
+    [SerializeField] private CanvasFade canvasFade;
+    [SerializeField] private bool requiresInitialInteraction = false;
 
-    private static bool isChangingScene = false; // Flag to prevent immediate changes
+    private static bool isChangingScene = false;
 
     private void Start()
     {
@@ -20,13 +20,12 @@ public class SceneChangeTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player") && !isChangingScene)
         {
-            // Check if the required interaction has been completed
-            if (requiresInitialInteraction && !StorylineManager.Instance.HasInteracted("Computer"))
+            if (requiresInitialInteraction && !StorylineManager.Instance.IsInitialInteractionCompleted())
             {
                 return;
             }
 
-            isChangingScene = true; // Block scene change for a while
+            isChangingScene = true;
             PlayerPositionManager.Instance.SavePlayerPosition(SceneManager.GetActiveScene().name, other.transform.position);
             StartCoroutine(ChangeSceneRoutine());
         }
@@ -34,23 +33,20 @@ public class SceneChangeTrigger : MonoBehaviour
 
     private IEnumerator ChangeSceneRoutine()
     {
-        // 1) Fade out (vecchia scena: 0->1)
         if (canvasFade != null)
         {
             yield return canvasFade.StartCoroutine(canvasFade.FadeOutRoutine());
         }
 
-        // 2) Carico la nuova scena
         yield return SceneManager.LoadSceneAsync(sceneToLoad);
 
-        // 3) Posiziono il Player
         GameObject player = GameObject.FindWithTag("Player");
         if (player != null)
         {
             player.transform.position = spawnPosition;
         }
 
-        yield return new WaitForSeconds(1f); // Wait 1 second before re-enabling scene change
+        yield return new WaitForSeconds(1f);
         isChangingScene = false;
     }
 

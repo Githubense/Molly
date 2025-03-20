@@ -47,4 +47,9 @@ public class StorylineManager : MonoBehaviour
             interactionStates.Add(interactionKey, state);
         }
     }
+
+    public bool IsInitialInteractionCompleted()
+    {
+        return interactionStates.ContainsKey(initialInteractionKey) && interactionStates[initialInteractionKey];
+    }
 }

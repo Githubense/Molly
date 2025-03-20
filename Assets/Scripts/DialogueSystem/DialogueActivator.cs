@@ -5,6 +5,8 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     [SerializeField] private DialogueObject dialogueObject;
     [SerializeField] private GameObject visualCue;
     [SerializeField] private string interactionKey;
+    [SerializeField] private bool requiresPreviousInteraction = false;
+    [SerializeField] private string previousInteractionKey;
 
     private bool canInteract = true;
 
@@ -14,6 +16,11 @@ public class DialogueActivator : MonoBehaviour, IInteractable
         {
             if (canInteract && StorylineManager.Instance.CanInteract(interactionKey))
             {
+                if (requiresPreviousInteraction && !StorylineManager.Instance.HasInteracted(previousInteractionKey))
+                {
+                    return;
+                }
+
                 player.Interactable = this;
                 if (visualCue != null) 
                     visualCue.SetActive(true);
@@ -36,6 +43,11 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     public void Interact(PlayerMovement player)
     {
         if (!canInteract || !StorylineManager.Instance.CanInteract(interactionKey)) return;
+
+        if (requiresPreviousInteraction && !StorylineManager.Instance.HasInteracted(previousInteractionKey))
+        {
+            return;
+        }
 
         player.DialogueUi.ShowDialogue(dialogueObject);
         StorylineManager.Instance.SetInteractionState(interactionKey, true);

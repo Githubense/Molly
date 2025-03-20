@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1a0c166abbf7404e971c48d06ca4317, type: 3}
-  m_Name: table
+  m_Name: phone
   m_EditorClassIdentifier: 
   dialogueKeys:
-  - Dishes
+  - Phone
   hasChoices: 0
   choiceKeys: []
   choiceResultKeys: []
