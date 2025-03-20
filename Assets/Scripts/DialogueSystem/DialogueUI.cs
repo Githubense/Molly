@@ -5,6 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
+using UnityEngine.EventSystems;
 
 public class DialogueUi : MonoBehaviour
 {
@@ -77,8 +78,10 @@ public class DialogueUi : MonoBehaviour
             yield return new WaitUntil(() => choiceSelected);
             HandleChoiceSelection(dialogueObject);
         }
-
-        CloseDialogueBox();
+        else
+        {
+            CloseDialogueBox();
+        }
     }
 
     private void ShowChoices(string[] choiceKeys)
@@ -91,6 +94,13 @@ public class DialogueUi : MonoBehaviour
                 var localizedString = new LocalizedString("DialogueTable", choiceKeys[i]);
                 choiceLabels[i].text = localizedString.GetLocalizedString();
                 choiceLabels[i].gameObject.SetActive(true);
+
+                // Add event listeners for mouse and touch input
+                int choiceIndex = i;
+                EventTrigger trigger = choiceLabels[i].gameObject.AddComponent<EventTrigger>();
+                EventTrigger.Entry entry = new EventTrigger.Entry { eventID = EventTriggerType.PointerClick };
+                entry.callback.AddListener((eventData) => OnChoiceSelected(choiceIndex));
+                trigger.triggers.Add(entry);
             }
         }
         // Hide any unused choice labels
@@ -141,8 +151,14 @@ public class DialogueUi : MonoBehaviour
         if (selectAction.triggered)
         {
             // Trigger the selection action
-            choiceSelected = true;
+            OnChoiceSelected(currentChoiceIndex);
         }
+    }
+
+    private void OnChoiceSelected(int choiceIndex)
+    {
+        currentChoiceIndex = choiceIndex;
+        choiceSelected = true;
     }
 
     private void HandleChoiceSelection(DialogueObject dialogueObject)
@@ -154,12 +170,15 @@ public class DialogueUi : MonoBehaviour
             string resultLine = localizedString.GetLocalizedString();
             StartCoroutine(DisplayResult(resultLine));
         }
+
+        // Save the selection in the StorylineManager
+        StorylineManager.Instance.SetInteractionState(dialogueObject.ChoiceKeys[currentChoiceIndex], true);
     }
 
     private IEnumerator DisplayResult(string resultLine)
     {
         yield return typeEffect.Run(resultLine, textLabel);
         yield return new WaitUntil(() => skipDialogueAction.triggered);
-        CloseDialogueBox();
+        // Do not close the dialogue box here
     }
 }
