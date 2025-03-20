@@ -25,6 +25,7 @@ public class DialogueUi : MonoBehaviour
 
     private int currentChoiceIndex;
     private bool choiceSelected;
+    private bool displayingResult; // Flag to indicate if displaying result
 
     private void Awake()
     {
@@ -128,6 +129,7 @@ public class DialogueUi : MonoBehaviour
         textLabel.text = string.Empty;
         OnDialogueClosed?.Invoke();
         choiceSelected = false; // Reset the choiceSelected flag
+        displayingResult = false; // Reset the displayingResult flag
     }
 
     private void Update()
@@ -153,6 +155,15 @@ public class DialogueUi : MonoBehaviour
             // Trigger the selection action
             OnChoiceSelected(currentChoiceIndex);
         }
+
+        // Allow dismissing the dialogue canvas with spacebar, west button, or B button
+        if (skipDialogueAction.triggered || Gamepad.current.buttonWest.wasPressedThisFrame || Gamepad.current.buttonSouth.wasPressedThisFrame)
+        {
+            if (displayingResult)
+            {
+                CloseDialogueBox();
+            }
+        }
     }
 
     private void OnChoiceSelected(int choiceIndex)
@@ -177,8 +188,9 @@ public class DialogueUi : MonoBehaviour
 
     private IEnumerator DisplayResult(string resultLine)
     {
+        displayingResult = true; // Set the flag to indicate result is being displayed
         yield return typeEffect.Run(resultLine, textLabel);
-        yield return new WaitUntil(() => skipDialogueAction.triggered);
-        // Do not close the dialogue box here
+        yield return new WaitUntil(() => skipDialogueAction.triggered || Gamepad.current.buttonWest.wasPressedThisFrame || Gamepad.current.buttonSouth.wasPressedThisFrame);
+        CloseDialogueBox();
     }
 }
