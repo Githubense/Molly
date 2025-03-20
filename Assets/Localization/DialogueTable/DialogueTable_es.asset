@@ -44,17 +44,175 @@ MonoBehaviour:
     m_Localized: Cerrar
     m_Metadata:
       m_Items: []
-  - m_Id: 1782774859030528
-    m_Localized: "Advertencia\n\nQuesto gioco contiene temi legati ai disturbi alimentari
-      e alle difficolt\xE0 legate alla salute mentale. Alcune scene potrebbero risultare
-      angoscianti o scatenare reazioni in alcuni giocatori. Si consiglia la discrezione."
+  - m_Id: 1771908071677952
+    m_Localized: "Te dej\xE9 sin comida otra vez... lo siento."
     m_Metadata:
       m_Items: []
-  - m_Id: 1784340840177664
-    m_Localized: "Si t\xFA o alguien que conoces est\xE1 luchando con un trastorno
+  - m_Id: 1773525143642112
+    m_Localized: "Suplementos de hierro, vitaminas... los tomo, pero \xBFrealmente
+      ayudan?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774559781969920
+    m_Localized: Solo agua. Perfecto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774736135675904
+    m_Localized: "Deber\xEDa pintar. Pero ni siquiera puedo pensar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1774976356048896
+    m_Localized: "Ya no escucho m\xFAsica... Era demasiado reconfortante."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775080999739392
+    m_Localized: "El agua caliente a veces me hace sentir m\xE1s ligera."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775455676915712
+    m_Localized: "Demasiados platos para lavar. Tal vez ma\xF1ana."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1775821172760576
+    m_Localized: "A veces me pregunto... si mi cuerpo pudiera rechazarlo todo, tal
+      vez me sentir\xEDa mejor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837342561132544
+    m_Localized: "Me aisl\xE9 tanto en la vida real, pero al menos en las redes sociales
+      puedo encontrar personas como yo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837683100868608
+    m_Localized: "Me qued\xE9 dormida otra vez\u2026 A veces me pregunto por qu\xE9
+      siempre estoy tan cansada. Pero al menos, si duermo, no tengo que pensar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837783466369024
+    m_Localized: "o pens\xE9 que pudiera perderme tanto. Mis padres siempre me ense\xF1aron
+      a tener calificaciones perfectas. En mi antiguo pueblo hab\xEDa pocas oportunidades
+      de trabajo, hicieron tantos sacrificios para permitirme mudarme aqu\xED, a
+      Puepolis, para estudiar arte\u2026\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837919101771776
+    m_Localized: No puedo creer que los haya decepcionado.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843402839678976
+    m_Localized: "Tal vez deber\xEDa lavarlos\u2026 Llevan ah\xED demasiado tiempo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843481147334656
+    m_Localized: "No pens\xE9 que esto me har\xEDa sentir un poco mejor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843542325452800
+    m_Localized: "\u201CCari\xF1o, \xBFc\xF3mo est\xE1s? \xBFC\xF3mo van los ex\xE1menes?
+      Espero que no te est\xE9s estresando demasiado. S\xE9 que lo har\xE1s genial,
+      como siempre. \xA1No puedo esperar a que vuelvas a casa con otra nota alta!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843653365456896
+    m_Localized: " \xBFC\xF3mo se lo digo? Estoy reprobando todas las materias. No
+      puedo decepcionarlos\u2026 Hicieron tanto por m\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843762199257088
+    m_Localized: 'No puedo permitirme comer. No lo merezco.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1843808089137152
+    m_Localized: "La nevera est\xE1 casi vac\xEDa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844027530928128
+    m_Localized: No necesito nada.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844106849411072
+    m_Localized: 'Molly duda pero finalmente cierra la nevera sin tomar nada.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844152944812032
+    m_Localized: "Tal vez deber\xEDa recoger la basura\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844194254512128
+    m_Localized: "Supongo\u2026 que eso fue productivo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844336437223424
+    m_Localized: "Me veo horrible, nunca ser\xE9 lo suficientemente delgada.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844390212395008
+    m_Localized: "\u201D\xA1Hey Molly! Vamos a un restaurante de sushi este fin de
+      semana. \xBFQuieres venir? \xA1Hace mucho que no nos vemos!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844431459180544
+    m_Localized: "No puedo. No quiero que me vean as\xED. \xBFQu\xE9 pensar\xE1n
+      cuando solo pida agua? No puedo\u2014no puedo\u2014no puedo comer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844499209773056
+    m_Localized: Necesito calmarme.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844545045127168
+    m_Localized: Tomar las pastillas?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844641665114112
+    m_Localized: "Est\xE1 bien. Solo necesito mantener el control."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844726880788480
+    m_Localized: "Necesito llamar a la terapeuta. No puedo creer que me sienta as\xED\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844799261892608
+    m_Localized: Llamar a la terapeuta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844851954933760
+    m_Localized: "\u201D\xBFMolly? Me alegra mucho que hayas llamado. Dime, \xBFqu\xE9
+      tienes en mente?\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844916064870400
+    m_Localized: "Yo\u2026 creo que necesito ayuda."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844993865015296
+    m_Localized: "Buena chica. Qu\xE9date vac\xEDa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2095195691671552
+    m_Localized: "Aviso\n\nEste juego contiene temas relacionados con trastornos
+      alimentarios y dificultades de salud mental. Algunas escenas pueden ser angustiantes
+      o desencadenar reacciones en algunos jugadores. Se recomienda discreci\xF3n
+      al jugador."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2104022092734464
+    m_Localized: "Si t\xFA o alguien que conoces est\xE1 luchando contra un trastorno
       alimentario o problemas de salud mental, por favor busca apoyo de un profesional
-      de confianza o una organizaci\xF3n especializada en salud mental. No est\xE1s
+      de confianza o de una organizaci\xF3n especializada en salud mental. No est\xE1s
       solo, y hay ayuda disponible."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2125520488620032
+    m_Localized: Reabastecer la nevera.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2125547718041600
+    m_Localized: Cerrar la nevera.
     m_Metadata:
       m_Items: []
   references:

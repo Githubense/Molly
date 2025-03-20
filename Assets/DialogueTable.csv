@@ -1,0 +1,52 @@
+Key,Id,English(en),Italian(it),Spanish(es)
+"Bed",94198816768,"Too soft, too enveloping... I don’t want to get up.","Troppo morbido, troppo avvolgente... non voglio alzarmi.","Demasiado suave, demasiado envolvente... no quiero levantarme."
+"Settings",1399371877834752,"Settings","Impostazioni","Opciones"
+"Language",1402210666668032,"Language","Lingue","Idioma"
+"Start",1402345610010624,"Start","Inizia","Iniciar"
+"Quit",1402420016963584,"Quit","Esci","Cerrar"
+"Close",1409510345269248,"Close","Chiudi","Cerrar"
+"Cat",1771908071677952,"I left you without food again... I'm sorry.","Ti ho lasciato senza cibo di nuovo... mi dispiace.","Te dejé sin comida otra vez... lo siento."
+"Drug",1773525143642112,"Iron supplements, vitamins... I take them, but do they really help?"," Integratori di ferro, vitamine... li prendo, ma aiutano davvero?","Suplementos de hierro, vitaminas... los tomo, pero ¿realmente ayudan?"
+"Fridge",1774559781969920,"Only water. Perfect.","Solo acqua. Perfetto.","Solo agua. Perfecto."
+"Paint",1774736135675904,"I should paint. But I can't even think.","Dovrei dipingere. Ma non riesco nemmeno a pensare.","Debería pintar. Pero ni siquiera puedo pensar."
+"Recorder",1774976356048896,"I don’t listen to music anymore... It was too comforting.","Non ascolto più musica... Era troppo confortante.","Ya no escucho música... Era demasiado reconfortante."
+"Shower",1775080999739392,"Hot water sometimes makes me feel lighter."," L'acqua calda a volte mi fa sentire più leggera.","El agua caliente a veces me hace sentir más ligera."
+"Table",1775455676915712,"Too many dishes to wash. Maybe tomorrow.","Troppi piatti da lavare. Forse domani.","Demasiados platos para lavar. Tal vez mañana."
+"Toilet",1775821172760576,"Sometimes I wonder... if my body could reject everything, maybe I’d feel better.","A volte mi chiedo... se il mio corpo potesse rifiutare tutto, forse mi sentirei meglio.","A veces me pregunto... si mi cuerpo pudiera rechazarlo todo, tal vez me sentiría mejor."
+"Computer",1837342561132544,"I isolated myself so much in real life, but at least on social media, I can find people like me.
+","Mi sono isolata così tanto nella vita reale, ma almeno sui social media posso trovare persone come me","Me aislé tanto en la vida real, pero al menos en las redes sociales puedo encontrar personas como yo."
+"Molly' s in bed",1837683100868608," I overslept again… Sometimes I wonder why I’m always so tired. But at least if I sleep, I don’t have to think.","Ho dormito troppo di nuovo… A volte mi chiedo perché sono sempre così stanca. Ma almeno, se dormo, non devo pensare.","Me quedé dormida otra vez… A veces me pregunto por qué siempre estoy tan cansada. Pero al menos, si duermo, no tengo que pensar."
+"Molly's telling her story 1",1837783466369024,"I didn’t think I could lose myself this much. My parents always taught me to have perfect grades. Given the few job opportunities in my old town, they made so many sacrifices to let me move here to Puepolis for art school…
+","Non pensavo di potermi perdere così tanto. I miei genitori mi hanno sempre insegnato ad avere voti perfetti. Nel mio vecchio paese c’erano poche opportunità di lavoro, hanno fatto tanti sacrifici per permettermi di trasferirmi qui a Puepolis per studiare arte…","o pensé que pudiera perderme tanto. Mis padres siempre me enseñaron a tener calificaciones perfectas. En mi antiguo pueblo había pocas oportunidades de trabajo, hicieron tantos sacrificios para permitirme mudarme aquí, a Puepolis, para estudiar arte…
+"
+"Molly's telling her story 2",1837919101771776,"I can’t believe I let them down.","Non posso credere di averli delusi.","No puedo creer que los haya decepcionado."
+"Kitchen",1843402839678976,"Maybe I should wash them… They’ve been sitting there for a while.
+","Forse dovrei lavarli… Sono lì da troppo tempo.","Tal vez debería lavarlos… Llevan ahí demasiado tiempo"
+"Dishes",1843481147334656," I didn’t think it would make me feel a bit better.
+","Non pensavo che mi avrebbe fatto sentire un po’ meglio.","No pensé que esto me haría sentir un poco mejor."
+"interaction with house phone when mum calls",1843542325452800,"“Sweetie, how are you? How’s the midterm going? I hope you’re not stressing too much. I know you’ll do great—you always do! Can’t wait for you to bring back home another high score!”
+","“Tesoro, come stai? Come stanno andando gli esami? Spero che tu non ti stia stressando troppo. So che andrai benissimo, come sempre! Non vedo l’ora di vederti tornare a casa con un altro voto alto!”","“Cariño, ¿cómo estás? ¿Cómo van los exámenes? Espero que no te estés estresando demasiado. Sé que lo harás genial, como siempre. ¡No puedo esperar a que vuelvas a casa con otra nota alta!”"
+"Moly's dialogue after the call with her mum ",1843653365456896,"How do I tell her? I’ve been failing all my classes. I can’t disappoint them… They did so much for me.","Come faccio a dirglielo? Sto fallendo tutti gli esami. Non posso deluderli… Hanno fatto così tanto per me."," ¿Cómo se lo digo? Estoy reprobando todas las materias. No puedo decepcionarlos… Hicieron tanto por mí."
+"Molly's stomach ",1843762199257088,"I can’t allow myself to eat. I don’t deserve it.
+","Non posso permettermi di mangiare. Non lo merito.","No puedo permitirme comer. No lo merezco.
+"
+"Fridge 2",1843808089137152,"The fridge is nearly empty.
+","Il frigorifero è praticamente vuoto.","La nevera está casi vacía."
+"If ""close fridge""",1844027530928128,"I don’t need anything.","Non mi serve niente.","No necesito nada."
+"if ""restock fridge""",1844106849411072," Molly hesitates but ultimately closes the fridge without doing anything.","Molly esita, ma alla fine chiude il frigorifero senza prendere nulla.","Molly duda pero finalmente cierra la nevera sin tomar nada.
+"
+"Molly goes in the bedroom and it's dirty",1844152944812032," Maybe I should pick up the trash…","Forse dovrei raccogliere la spazzatura…","Tal vez debería recoger la basura…"
+"Molly after cleaning the bedroom",1844194254512128,"I guess… that was productive?","Immagino… che sia stato produttivo?","Supongo… que eso fue productivo?"
+"Molly looking in the mirror",1844336437223424," I look disgusting, I’ll never be skinny enough.","Faccio schifo, non sarò mai abbastanza magra.","Me veo horrible, nunca seré lo suficientemente delgada.
+"
+"Phone message	",1844390212395008,"“Hey Molly! We’re going to a seafood place this weekend. Wanna come? It’s been so long!”","“Ehi Molly! Andiamo al sushi questo weekend. Vuoi venire? È da troppo che non ci vediamo!”","”¡Hey Molly! Vamos a un restaurante de sushi este fin de semana. ¿Quieres venir? ¡Hace mucho que no nos vemos!”"
+"Molly reaction to the message",1844431459180544,"I can’t. I don’t want them to see me like this. What will they think when I only order water? I can’t—I can’t—I can’t eat.","Non posso. Non voglio che mi vedano così. Cosa penseranno quando ordinerò solo dell’acqua? Non posso—non posso—non posso mangiare.","No puedo. No quiero que me vean así. ¿Qué pensarán cuando solo pida agua? No puedo—no puedo—no puedo comer."
+"Molly stressing out	",1844499209773056,"I need to calm down.","Devo calmarmi.","Necesito calmarme."
+"Interaction with sink ",1844545045127168,"Take pills?","Prendere le pillole?","Tomar las pastillas?"
+"if molly takes pills	",1844641665114112,"It’s fine. I just need to stay in control.","Tutto ok. Devo solo mantenere il controllo.","Está bien. Solo necesito mantener el control."
+"if molly doesnt take the pills ",1844726880788480," I need to call the therapist. I can’t believe I’m feeling this way…","Devo chiamare la terapeuta. Non posso credere di sentirmi così…","Necesito llamar a la terapeuta. No puedo creer que me sienta así…"
+"after molly doesn't take the pills",1844799261892608,"Call Therapist.","Chiama la terapeuta","Llamar a la terapeuta."
+"Therapist on the house phone",1844851954933760,"Molly? I’m so glad you called. Tell me what’s on your mind.","“Molly? Sono così felice che tu abbia chiamato. Dimmi, cosa hai in mente?”","”¿Molly? Me alegra mucho que hayas llamado. Dime, ¿qué tienes en mente?”"
+"Molly's response to therapist",1844916064870400,"I… I think I need help.","Io… penso di aver bisogno di aiuto.","Yo… creo que necesito ayuda."
+"If molly doesn't call therapist",1844993865015296,"Good girl. Starve.","Brava ragazza. Meglio morir di fame.","Buena chica. Quédate vacía."
+"Test",2095195691671552,,,

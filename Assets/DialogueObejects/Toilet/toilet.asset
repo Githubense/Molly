@@ -12,6 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a0c166abbf7404e971c48d06ca4317, type: 3}
   m_Name: toilet
   m_EditorClassIdentifier: 
-  dialogue:
-  - "Sometimes I wonder... if my body could reject everything, maybe I\u2019d feel
-    better."
+  dialogueKeys: []
