@@ -182,10 +182,12 @@ PrefabInstance:
     - target: {fileID: 3922921386385575864, guid: 36a5f881b13314625a8699f989327f83, type: 3}
       propertyPath: spawnPosition.x
       value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3922921386385575864, guid: 36a5f881b13314625a8699f989327f83, type: 3}
       propertyPath: spawnPosition.y
       value: 2
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 3922921386385575864, guid: 36a5f881b13314625a8699f989327f83, type: 3}
       propertyPath: requiredInteractionKey
@@ -2669,6 +2671,16 @@ PrefabInstance:
     - target: {fileID: 423873607232540740, guid: e7c2b5b931cfc4107a386b0b3832a96c, type: 3}
       propertyPath: m_Color.a
       value: 1
+      propertyPath: m_Color.b
+      value: 0.45882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 423873607232540740, guid: e7c2b5b931cfc4107a386b0b3832a96c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.74509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 423873607232540740, guid: e7c2b5b931cfc4107a386b0b3832a96c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.49411765
       objectReference: {fileID: 0}
     - target: {fileID: 802203853205494291, guid: e7c2b5b931cfc4107a386b0b3832a96c, type: 3}
       propertyPath: m_Name
@@ -5430,6 +5442,18 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 69524520}
+    - target: {fileID: 7217751524653493989, guid: 554a14517e3764778a9f2e15532558fa, type: 3}
+      propertyPath: m_Color.b
+      value: 0.45882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217751524653493989, guid: 554a14517e3764778a9f2e15532558fa, type: 3}
+      propertyPath: m_Color.g
+      value: 0.74509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217751524653493989, guid: 554a14517e3764778a9f2e15532558fa, type: 3}
+      propertyPath: m_Color.r
+      value: 0.49411765
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6496,6 +6520,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2502676910992534534, guid: f84c34eb504104a5486bd8e37bd92ab4, type: 3}
+      propertyPath: m_Color.b
+      value: 0.45882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502676910992534534, guid: f84c34eb504104a5486bd8e37bd92ab4, type: 3}
+      propertyPath: m_Color.g
+      value: 0.74509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502676910992534534, guid: f84c34eb504104a5486bd8e37bd92ab4, type: 3}
+      propertyPath: m_Color.r
+      value: 0.49411765
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943177309249779279, guid: f84c34eb504104a5486bd8e37bd92ab4, type: 3}
+      propertyPath: m_Color.b
+      value: 0.45882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943177309249779279, guid: f84c34eb504104a5486bd8e37bd92ab4, type: 3}
+      propertyPath: m_Color.g
+      value: 0.74509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943177309249779279, guid: f84c34eb504104a5486bd8e37bd92ab4, type: 3}
+      propertyPath: m_Color.r
+      value: 0.49411765
+      objectReference: {fileID: 0}
     - target: {fileID: 7906051245615044796, guid: f84c34eb504104a5486bd8e37bd92ab4, type: 3}
       propertyPath: m_Name
       value: joystick
@@ -6873,4 +6921,3 @@ SceneRoots:
   - {fileID: 1595988234}
   - {fileID: 1862058425}
   - {fileID: 2016581542}
-  - {fileID: 815209250}
