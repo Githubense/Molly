@@ -22,16 +22,19 @@ public class DialogueUi : MonoBehaviour
     private InputAction skipDialogueAction;
     private InputAction navigateAction;
     private InputAction selectAction;
+    private InputAction interactAction;
 
     private int currentChoiceIndex;
     private bool choiceSelected;
     private bool displayingResult; // Flag to indicate if displaying result
+    private bool canSelectChoice; // Flag to indicate if choices can be selected
 
     private void Awake()
     {
         skipDialogueAction = new InputAction(binding: "<Keyboard>/space");
         navigateAction = new InputAction(binding: "<Gamepad>/dpad");
         selectAction = new InputAction(binding: "<Gamepad>/buttonSouth");
+        interactAction = new InputAction(binding: "<Gamepad>/buttonEast");
     }
 
     private void OnEnable()
@@ -39,6 +42,7 @@ public class DialogueUi : MonoBehaviour
         skipDialogueAction.Enable();
         navigateAction.Enable();
         selectAction.Enable();
+        interactAction.Enable();
     }
 
     private void OnDisable()
@@ -46,6 +50,7 @@ public class DialogueUi : MonoBehaviour
         skipDialogueAction.Disable();
         navigateAction.Disable();
         selectAction.Disable();
+        interactAction.Disable();
     }
 
     private void Start()
@@ -70,12 +75,14 @@ public class DialogueUi : MonoBehaviour
             string dialogueLine = localizedString.GetLocalizedString();
 
             yield return typeEffect.Run(dialogueLine, textLabel);
-            yield return new WaitUntil(() => skipDialogueAction.triggered);
+            yield return new WaitUntil(() => skipDialogueAction.triggered || interactAction.triggered);
         }
 
         if (dialogueObject.HasChoices)
         {
             ShowChoices(dialogueObject.ChoiceKeys);
+            yield return new WaitForSeconds(0.5f); // Add a delay before allowing selection
+            canSelectChoice = true;
             yield return new WaitUntil(() => choiceSelected);
             HandleChoiceSelection(dialogueObject);
         }
@@ -109,7 +116,7 @@ public class DialogueUi : MonoBehaviour
         {
             choiceLabels[i].gameObject.SetActive(false);
         }
-        currentChoiceIndex = 0;
+        currentChoiceIndex = -1; // Set to -1 to indicate no selection
         UpdateChoiceSelection();
     }
 
@@ -130,13 +137,14 @@ public class DialogueUi : MonoBehaviour
         OnDialogueClosed?.Invoke();
         choiceSelected = false; // Reset the choiceSelected flag
         displayingResult = false; // Reset the displayingResult flag
+        canSelectChoice = false; // Reset the canSelectChoice flag
     }
 
     private void Update()
     {
         if (!isOpen) return;
 
-        if (navigateAction.triggered)
+        if (navigateAction.triggered && canSelectChoice)
         {
             Vector2 navigation = navigateAction.ReadValue<Vector2>();
             if (navigation.y > 0)
@@ -150,14 +158,14 @@ public class DialogueUi : MonoBehaviour
             UpdateChoiceSelection();
         }
 
-        if (selectAction.triggered)
+        if (selectAction.triggered && currentChoiceIndex >= 0 && canSelectChoice)
         {
             // Trigger the selection action
             OnChoiceSelected(currentChoiceIndex);
         }
 
-        // Allow dismissing the dialogue canvas with spacebar, west button, or B button
-        if (skipDialogueAction.triggered || Gamepad.current.buttonWest.wasPressedThisFrame || Gamepad.current.buttonSouth.wasPressedThisFrame)
+        // Allow dismissing the dialogue canvas with spacebar, east button, or B button
+        if (skipDialogueAction.triggered || interactAction.triggered || Gamepad.current.buttonWest.wasPressedThisFrame)
         {
             if (displayingResult)
             {
@@ -193,7 +201,7 @@ public class DialogueUi : MonoBehaviour
     {
         displayingResult = true; // Set the flag to indicate result is being displayed
         yield return typeEffect.Run(resultLine, textLabel);
-        yield return new WaitUntil(() => skipDialogueAction.triggered || Gamepad.current.buttonWest.wasPressedThisFrame || Gamepad.current.buttonSouth.wasPressedThisFrame);
+        yield return new WaitUntil(() => skipDialogueAction.triggered || interactAction.triggered || Gamepad.current.buttonWest.wasPressedThisFrame);
         CloseDialogueBox();
     }
 }
