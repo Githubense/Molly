@@ -184,6 +184,9 @@ public class DialogueUi : MonoBehaviour
 
         // Save the selection in the StorylineManager
         StorylineManager.Instance.SetInteractionState(dialogueObject.ChoiceKeys[currentChoiceIndex], true);
+
+        // Hide the choice box to prevent changing the decision
+        choiceBox.SetActive(false);
     }
 
     private IEnumerator DisplayResult(string resultLine)
