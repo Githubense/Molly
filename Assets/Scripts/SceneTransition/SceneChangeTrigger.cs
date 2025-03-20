@@ -7,13 +7,10 @@ public class SceneChangeTrigger : MonoBehaviour
     [SerializeField] private string sceneToLoad;
     [SerializeField] private Vector3 spawnPosition;
     [SerializeField] private CanvasFade canvasFade; 
-    // assegni in Inspector l'oggetto col CanvasFade (quello che fa fade in/out)
-    public string sceneToLoad;
-    public Vector3 spawnPosition;
-    private static bool isChangingScene = false; // Flag to prevent immediate changes
     [SerializeField] private bool requiresInitialInteraction = false; // Add this line
 
-    private bool isChangingScene = false;
+    private static bool isChangingScene = false; // Flag to prevent immediate changes
+
     private void Start()
     {
         StartCoroutine(EnableSceneChangeAfterDelay());
@@ -21,11 +18,8 @@ public class SceneChangeTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!isChangingScene && other.CompareTag("Player"))
         if (other.CompareTag("Player") && !isChangingScene)
         {
-            isChangingScene = true;
-            StartCoroutine(ChangeSceneRoutine());
             // Check if the required interaction has been completed
             if (requiresInitialInteraction && !StorylineManager.Instance.HasInteracted("Computer"))
             {
@@ -34,12 +28,11 @@ public class SceneChangeTrigger : MonoBehaviour
 
             isChangingScene = true; // Block scene change for a while
             PlayerPositionManager.Instance.SavePlayerPosition(SceneManager.GetActiveScene().name, other.transform.position);
-            StartCoroutine(ChangeScene());
+            StartCoroutine(ChangeSceneRoutine());
         }
     }
 
     private IEnumerator ChangeSceneRoutine()
-    private IEnumerator ChangeScene()
     {
         // 1) Fade out (vecchia scena: 0->1)
         if (canvasFade != null)
