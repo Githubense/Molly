@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
         Move();
 
-        if (Keyboard.current.eKey.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (Keyboard.current.eKey.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame || Gamepad.current.buttonWest.wasPressedThisFrame)
         {
             Interactable?.Interact(this);
         }

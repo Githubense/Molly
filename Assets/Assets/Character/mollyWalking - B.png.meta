@@ -1,0 +1,625 @@
+fileFormatVersion: 2
+guid: 587f44c38b2274f67b43a44552deee48
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8729952773947156533
+    second: mollyWalking - B_0
+  - first:
+      213: 2972170729184829338
+    second: mollyWalking - B_1
+  - first:
+      213: 8173745367949192655
+    second: mollyWalking - B_2
+  - first:
+      213: 2325760526917572546
+    second: mollyWalking - B_3
+  - first:
+      213: -327316746443803857
+    second: mollyWalking - B_4
+  - first:
+      213: 6880006737678858104
+    second: mollyWalking - B_5
+  - first:
+      213: 8110387315327278564
+    second: mollyWalking - B_6
+  - first:
+      213: 6049067053242821104
+    second: mollyWalking - B_7
+  - first:
+      213: -4327298903149361648
+    second: mollyWalking - B_8
+  - first:
+      213: 1606820789851316913
+    second: mollyWalking - B_9
+  - first:
+      213: -7818283567906037513
+    second: mollyWalking - B_10
+  - first:
+      213: 6519212568116063986
+    second: mollyWalking - B_11
+  - first:
+      213: -1253732443007864084
+    second: mollyWalking - B_12
+  - first:
+      213: 3650050805077933015
+    second: mollyWalking - B_13
+  - first:
+      213: 3550790185417413297
+    second: mollyWalking - B_14
+  - first:
+      213: -1864798781495698430
+    second: mollyWalking - B_15
+  - first:
+      213: -889308502435250729
+    second: mollyWalking - B_16
+  - first:
+      213: -8376520282559888554
+    second: mollyWalking - B_17
+  - first:
+      213: -3237111882209639453
+    second: mollyWalking - B_18
+  - first:
+      213: 6572316436947232989
+    second: mollyWalking - B_19
+  - first:
+      213: 5889760794419043428
+    second: mollyWalking - B_20
+  - first:
+      213: -5042789678901136418
+    second: mollyWalking - B_21
+  - first:
+      213: -6614126399329991882
+    second: mollyWalking - B_22
+  - first:
+      213: 63616347655514423
+    second: mollyWalking - B_23
+  - first:
+      213: -1976216369014800261
+    second: mollyWalking - B_24
+  - first:
+      213: -3845725435113981049
+    second: mollyWalking - B_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1024
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mollyWalking - B_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6316
+        width: 844
+        height: 2061
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc791f2943af8d680800000000000000
+      internalID: -8729952773947156533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mollyWalking - B_1
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 6311
+        width: 815
+        height: 2078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f10ece7854f3920800000000000000
+      internalID: 2972170729184829338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mollyWalking - B_3
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 6327
+        width: 840
+        height: 2076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c71c8770e2c64020800000000000000
+      internalID: 2325760526917572546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mollyWalking - B_5
+      rect:
+        serializedVersion: 2
+        x: 3254
+        y: 6328
+        width: 839
+        height: 2088
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87774a31da1ba7f50800000000000000
+      internalID: 6880006737678858104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mollyWalking - B_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4216
+        width: 843
+        height: 2061
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed9ae8ea42ed8070800000000000000
+      internalID: 8110387315327278564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mollyWalking - B_8
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 4227
+        width: 840
+        height: 2076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01648d8139852f3c0800000000000000
+      internalID: -4327298903149361648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mollyWalking - B_10
+      rect:
+        serializedVersion: 2
+        x: 3253
+        y: 4228
+        width: 839
+        height: 2088
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0efad9480ef7390800000000000000
+      internalID: -7818283567906037513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mollyWalking - B_12
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 4202
+        width: 819
+        height: 2078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce232235cf8d99ee0800000000000000
+      internalID: -1253732443007864084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mollyWalking - B_13
+      rect:
+        serializedVersion: 2
+        x: 3253
+        y: 2120
+        width: 839
+        height: 2088
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db7cc05ed597a230800000000000000
+      internalID: 3650050805077933015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mollyWalking - B_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2108
+        width: 843
+        height: 2061
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b29fb95cd0f64130800000000000000
+      internalID: 3550790185417413297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mollyWalking - B_15
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 2103
+        width: 819
+        height: 2078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c1e5b6367ee16e0800000000000000
+      internalID: -1864798781495698430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mollyWalking - B_17
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 2119
+        width: 840
+        height: 2076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 653c9280f2f90cb80800000000000000
+      internalID: -8376520282559888554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mollyWalking - B_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 844
+        height: 2061
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd863bf4afe853b50800000000000000
+      internalID: 6572316436947232989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mollyWalking - B_22
+      rect:
+        serializedVersion: 2
+        x: 3254
+        y: 16
+        width: 839
+        height: 2088
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633076c3517e534a0800000000000000
+      internalID: -6614126399329991882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mollyWalking - B_24
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 2
+        width: 820
+        height: 2078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b708f8dcea11394e0800000000000000
+      internalID: -1976216369014800261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mollyWalking - B_25
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 15
+        width: 840
+        height: 2076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78bb850a71d31aac0800000000000000
+      internalID: -3845725435113981049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e12a8dbb39a4b4d6283641090e3f9bfd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mollyWalking - B_0: -8729952773947156533
+      mollyWalking - B_1: 2972170729184829338
+      mollyWalking - B_10: -7818283567906037513
+      mollyWalking - B_11: 6519212568116063986
+      mollyWalking - B_12: -1253732443007864084
+      mollyWalking - B_13: 3650050805077933015
+      mollyWalking - B_14: 3550790185417413297
+      mollyWalking - B_15: -1864798781495698430
+      mollyWalking - B_16: -889308502435250729
+      mollyWalking - B_17: -8376520282559888554
+      mollyWalking - B_18: -3237111882209639453
+      mollyWalking - B_19: 6572316436947232989
+      mollyWalking - B_2: 8173745367949192655
+      mollyWalking - B_20: 5889760794419043428
+      mollyWalking - B_21: -5042789678901136418
+      mollyWalking - B_22: -6614126399329991882
+      mollyWalking - B_23: 63616347655514423
+      mollyWalking - B_24: -1976216369014800261
+      mollyWalking - B_25: -3845725435113981049
+      mollyWalking - B_3: 2325760526917572546
+      mollyWalking - B_4: -327316746443803857
+      mollyWalking - B_5: 6880006737678858104
+      mollyWalking - B_6: 8110387315327278564
+      mollyWalking - B_7: 6049067053242821104
+      mollyWalking - B_8: -4327298903149361648
+      mollyWalking - B_9: 1606820789851316913
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

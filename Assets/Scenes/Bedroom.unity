@@ -729,6 +729,8 @@ MonoBehaviour:
   hiddenPosition: {x: 0, y: -600}
   visiblePosition: {x: 10, y: 10}
   slideDuration: 1
+  showAndHideOnStart: 1
+  visibleTime: 2
 --- !u!1 &279341192
 GameObject:
   m_ObjectHideFlags: 0
@@ -5760,7 +5762,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775077857}
   m_Enabled: 0
-  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ab24e495c07c4adf987e7ce5b14cb50, type: 3}
   m_Name: 
@@ -7482,7 +7483,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.7294118, g: 0.84705883, b: 0.7137255, a: 1}
-  m_Color: {r: 0.49411765, g: 0.74509805, b: 0.45882353, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7513,7 +7513,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.7294118, g: 0.84705883, b: 0.7137255, a: 1}
-  m_Color: {r: 0.49411765, g: 0.74509805, b: 0.45882353, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7981,7 +7980,7 @@ Canvas:
   m_GameObject: {fileID: 4708593135801402480}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1437032405}
   m_PlaneDistance: 10
   m_PixelPerfect: 0
@@ -8414,7 +8413,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.7294118, g: 0.84705883, b: 0.7137255, a: 1}
-  m_Color: {r: 0.49402913, g: 0.745283, b: 0.46052867, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8445,7 +8443,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.7294118, g: 0.84705883, b: 0.7137255, a: 1}
-  m_Color: {r: 0.49411765, g: 0.74509805, b: 0.45882353, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

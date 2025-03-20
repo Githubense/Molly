@@ -265,6 +265,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1000095083}
+    - target: {fileID: 1326159154612925169, guid: f84c34eb504104a5486bd8e37bd92ab4, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1687989134875921201, guid: f84c34eb504104a5486bd8e37bd92ab4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1272,6 +1276,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 621746922}
   textLabel: {fileID: 1362938531}
+  choiceBox: {fileID: 0}
+  choiceLabels: []
   OnDialogueClosed:
     m_PersistentCalls:
       m_Calls: []
