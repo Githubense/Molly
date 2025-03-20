@@ -1401,6 +1401,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1674042386}
+    - target: {fileID: 4638302343687733960, guid: 554a14517e3764778a9f2e15532558fa, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7217751524653493989, guid: 554a14517e3764778a9f2e15532558fa, type: 3}
       propertyPath: m_Color.b
       value: 0.45882353
@@ -5111,6 +5115,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1674042386}
+    - target: {fileID: 830561831909359412, guid: e7c2b5b931cfc4107a386b0b3832a96c, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4695443387120002701, guid: e7c2b5b931cfc4107a386b0b3832a96c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
